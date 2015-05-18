@@ -1,0 +1,26 @@
+* {
+	color: black;
+}
+
+div {
+	background-color: #ffc;
+}
+
+h1.gold {
+	color: #874;
+}
+
+body {
+	background-color: #fff;
+}
+
+
+
+table.outline td {
+
+	border: 1px solid #874;
+}
+
+table.outline {
+	background-color: #ffc;
+}
