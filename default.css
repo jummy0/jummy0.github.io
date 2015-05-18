@@ -1,12 +1,12 @@
 @font-face {
     font-family: "Comic Neue Angular";
-    src: url(comicneue-angular-regular.ttf);
+    src: url("comicneue-angular-regular.ttf");
 }
 
 @font-face {
     font-family: "Comic Neue Angular";
 	font-weight: bold;
-    src: url(comicneue-angular-bold.ttf);
+    src: url("comicneue-angular-bold.ttf");
 }
 
 * {
