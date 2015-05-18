@@ -1,16 +1,5 @@
-@font-face {
-    font-family: "Comic Neue Angular";
-    src: url("comicneue-angular-regular.ttf");
-}
-
-@font-face {
-    font-family: "Comic Neue Angular";
-	font-weight: bold;
-    src: url("comicneue-angular-bold.ttf");
-}
-
 * {
-	font-family: "Comic Neue Angular", sans-serif;
+	font-family: Verdana, Arial, sans-serif;
 }
 
 div {
