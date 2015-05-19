@@ -8,7 +8,7 @@ div {
 	padding: 15px;
 }
 
-div p::first-line {
+div p {
 	margin: auto;
 	text-indent: 5em;
 }
