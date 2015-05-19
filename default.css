@@ -10,7 +10,7 @@ div {
 
 div p::first-line {
 	margin: auto;
-	margin-left: 5em;
+	text-indent: 5em;
 }
 
 h1 {
