@@ -9,6 +9,7 @@ div {
 }
 
 div p {
+	margin: auto;
 	margin-left: 5 em;
 }
 
