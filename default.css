@@ -8,6 +8,10 @@ div {
 	padding: 15px;
 }
 
+div p {
+	margin-left: 5 em;
+}
+
 h1 {
 	font-size: 32px;
 	text-align: center;
