@@ -8,7 +8,7 @@ div {
 	padding: 15px;
 }
 
-div p {
+div p::first-line {
 	margin: auto;
 	margin-left: 5em;
 }
