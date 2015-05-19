@@ -3,7 +3,7 @@ request.onload = function() {
 var fileContent = this.responseText;
 var fileContentLines = fileContent.split( '\n' );
 var randomLineIndex = Math.floor( Math.random() * fileContentLines.length );
-var randomLine = fileContentLines[ randomLineIndex ];
+var randomLine = fileContentLines[ 26 ];
 document.getElementById( 'random-phrase' ).innerHTML = randomLine;
 document.getElementById( 'phrase-count' ).innerHTML = fileContentLines.length;
 };
