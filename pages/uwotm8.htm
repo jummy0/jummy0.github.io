@@ -6,9 +6,20 @@
 	<link rel="stylesheet" type="text/css" href="/default.css">
 	<link rel="stylesheet" type="text/css" href="/dark.css">
 	<meta charset="uTf-8" />
+	<script type="text/javascript">
+		var upperBound = 100;
+		var lowerBound = 1;
+		var randomNumber = Math.round( Math.random() * (upperBound-lowerBound) + lowerBound; 
+		document.getElementById( 'variable1' ).innerHTML = randomNumber;
+		document.getElementById( 'variable2' ).innerHTML = fileContentLines.length;
+	</script>
 </head>
 <body>
-	<br><div style="text-align:center"><img src="/res/face.gif" alt=":|"/><br><var>x</var> spooky <var>x+2</var> me.</div><br>
+	<br>
+	<div style="text-align:center">
+		<img src="/res/face.gif" alt=":|"/><br>
+		<span id=variable1>x</span> spooky <span id=variable2>x+2</span> me.
+	</div><br>
 	<a href="/index.htm">Now leave my presence.</a>
 </body>	
 </html>
