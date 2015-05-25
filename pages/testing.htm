@@ -16,12 +16,12 @@
 	<a href="/index.htm">Home</a>
 	<script type="text/javascript">
 		var rotation = 0;
+		var interval
 		var pig = document.getElementById("dancepig");
-		while (true)
-		{
-			//pig.style.-webkit-transform = "rotate(".concat(rotation).concat("deg)");
+		interval = setInterval(spinPig, 100);
+		
+		function spinPig(){
 			pig.style.transform = "rotate(".concat(rotation).concat("deg)");
-			rotation += 1;
 		}
 	</script>
 </body>	
