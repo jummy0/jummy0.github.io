@@ -11,8 +11,17 @@
 	<h1 class=gold>ew.</h1><br>
 	<div class=info>
 		rainbarf best 1994<br>
-		<a href=bestface.htm><img src=/res/dancepig.gif /></a>
+		<a href=bestface.htm><img id=dancepig src=/res/dancepig.gif /></a>
 	</div><br>
 	<a href="/index.htm">Home</a>
+	<script type="text/javascript">
+		var rotation = 0;
+		while true
+		{
+			document.getElementById("dancepig").style.-webkit-transform = "rotate(".concat(rotation.toString()).concat("deg)");
+			document.getElementById("dancepig").style.transform = "rotate(".concat(rotation.toString()).concat("deg)");
+			rotation += 1;
+		}
+	</script>
 </body>	
 </html>
