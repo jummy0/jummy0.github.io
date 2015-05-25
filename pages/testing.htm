@@ -11,17 +11,17 @@
 	<h1 class=gold>ew.</h1><br>
 	<div class=info>
 		rainbarf best 1994<br>
-		<a href=bestface.htm><img id=dancepig src=/res/dancepig.gif /></a>
+		<a href=bestface.htm><img id=dancepig src=/res/dancepig.gif style="width:30%" /></a>
 	</div><br>
 	<a href="/index.htm">Home</a>
 	<script type="text/javascript">
 		var rotation = 0;
 		var interval
 		var pig = document.getElementById("dancepig");
-		interval = setInterval(spinPig, 17);
+		interval = setInterval(spinPig, 15);
 		
 		function spinPig(){
-			rotation += 1;
+			rotation += 3;
 			pig.style.transform = "rotate(".concat(rotation).concat("deg)");
 		}
 	</script>
