@@ -2,7 +2,7 @@
 	color: white;
 }
 
-div {
+div.info {
 	background-color: #234;
 }
 
@@ -14,12 +14,8 @@ body {
 	background-color: #012;
 }
 
-
-
 table.outline td {
-
 	border: 1px solid #ca6;
-
 }
 
 table.outline {

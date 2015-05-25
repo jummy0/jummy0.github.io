@@ -2,7 +2,7 @@
 	color: black;
 }
 
-div {
+div.info {
 	background-color: #ffc;
 }
 
@@ -13,8 +13,6 @@ h1.gold {
 body {
 	background-color: #fff;
 }
-
-
 
 table.outline td {
 
