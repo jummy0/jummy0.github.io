@@ -2,6 +2,10 @@
 	font-family: Verdana, Arial, sans-serif;
 }
 
+em {
+	font-family: inherit;
+}
+
 div.info {
 	margin: 0 auto;
 	width: 80%;
