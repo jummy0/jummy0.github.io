@@ -7,5 +7,5 @@ var randomLine = fileContentLines[ randomLineIndex ];
 document.getElementById( 'random-phrase' ).innerHTML = randomLine;
 document.getElementById( 'phrase-count' ).innerHTML = fileContentLines.length;
 };
-request.open( 'GET', 'pages/jontron.txt', true );
+request.open( 'GET', 'jontron.txt', true );
 request.send();
