@@ -32,7 +32,7 @@
 		codes.innerHTML = "";
 		var codesCharacters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_";
 		function hackCodes(){
-			newCode = codesCharacters[Math.random()*codesCharacters.length];
+			newCode = codesCharacters[Math.floor(Math.random()*codesCharacters.length)];
 			codes.innerHTML += String.fromCharCode(newCode);
 		}
 	</script>
