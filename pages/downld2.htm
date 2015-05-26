@@ -30,7 +30,7 @@
 		var interval = setInterval(hackCodes, 50);
 		var newCode;
 		codes.innerHTML = "";
-		var codesCharacters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_";
+		var codesCharacters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz|_";
 		function hackCodes(){
 			newCode = codesCharacters[Math.floor(Math.random()*codesCharacters.length)];
 			codes.innerHTML += newCode;
