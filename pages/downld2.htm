@@ -30,9 +30,10 @@
 		var interval = setInterval(hackCodes, 50);
 		var newCode;
 		codes.innerHTML = "";
+		var codesCharacters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_";
 		function hackCodes(){
-			newCode = Math.floor(Math.random()*95);
-			codes.innerHTML += String.fromCharCode(52 + newCode);
+			newCode = codesCharacters[Math.random()*codesCharacters.length];
+			codes.innerHTML += String.fromCharCode(newCode);
 		}
 	</script>
 </body>	
