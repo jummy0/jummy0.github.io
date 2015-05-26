@@ -27,11 +27,11 @@
 	<br>
 	<script type="text/javascript">
 		var codes = document.getElementById("internetcodes");
-		var interval = setInterval(hackCodes, 500);
+		var interval = setInterval(hackCodes, 50);
 		var newCode;
 		codes.innerHTML = "";
 		function hackCodes(){
-			newCode = Math.floor(Math.random()*99999);
+			newCode = Math.floor(Math.random()*10);
 			codes.innerHTML += newCode;
 		}
 	</script>
