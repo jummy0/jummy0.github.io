@@ -65,7 +65,7 @@ table {
 }
 
 .blink {
-	animation-duration: 1000ms;
+	animation-duration: 400ms;
 	animation-name: tgle;
 	animation-iteration-count: infinite;
 }
