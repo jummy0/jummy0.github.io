@@ -29,9 +29,10 @@
 		var codes = document.getElementById("internetcodes");
 		var interval = setInterval(hackCodes, 500);
 		var newCode;
+		codes.innerHtml = "";
 		function hackCodes(){
-			newCode = Math.floor(Math.random()*89999+10000)
-			codes.innerHtml += codes.innerHtml
+			newCode = Math.floor(Math.random()*89999+10000);
+			codes.innerHtml += newCode;
 		}
 	</script>
 </body>	
