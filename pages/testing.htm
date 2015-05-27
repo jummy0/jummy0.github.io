@@ -12,18 +12,28 @@
 	<div class=info>
 		rainbarf best 1994
 	</div>
-		<a href=bestface.htm><img id=dancepig src=/res/dancepig.gif style="width:30%" /></a><br>
+	<a href=bestface.htm><img id=dancepig src=/res/dancepig.gif style="width:30%" /></a><br>
+	<button onclick="prepareScreenShake()"></button> 	
+		
 	<a href="/index.htm">Home</a>
-	
 	<script type="text/javascript">
 		var rotation = 0;
-		var interval
+		var interval = setInterval(spinPig, 15);
 		var pig = document.getElementById("dancepig");
-		interval = setInterval(spinPig, 15);
 		
 		function spinPig(){
 			rotation += 3;
 			pig.style.transform = "rotate(".concat(rotation).concat("deg)");
+		}
+		
+		function prepareScreenShake(){
+			var screenX = window.screenX;
+			var screenY = window.screenY;
+			var shake = setInterval(screenShake, 15);
+		}
+		
+		function screenShake(){
+			window.moveTo(screenX+(Math.random*50-25),screenY+(Math.random*50-25));
 		}
 	</script>
 </body>	
