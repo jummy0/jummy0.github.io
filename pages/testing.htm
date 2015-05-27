@@ -20,6 +20,7 @@
 		var rotation = 0;
 		var interval = setInterval(spinPig, 15);
 		var pig = document.getElementById("dancepig");
+		var newWindow;
 		
 		function spinPig(){
 			rotation += 3;
@@ -29,12 +30,12 @@
 		function prepareScreenShake(){
 			var screenX = window.screenX;
 			var screenY = window.screenY;
-			var newWindow = window.open("testing.htm",'',"height=200,width=200")
+			newWindow = window.open("testing.htm",'',"height=100,width=200");
 			var shake = setInterval(screenShake, 15);
 		}
 		
 		function screenShake(){
-			newWindow.moveBy(3,0)
+			newWindow.moveBy(2,0);
 		}
 	</script>
 </body>	
