@@ -36,7 +36,7 @@
 		}
 		
 		function screenShake(){
-			if (newWindow){
+			if (newWindow && !newWindow.closed){
 				newWindow.moveBy(Math.random()*16-8,Math.random()*16-8);
 				newWindow.focus();
 			}else{
