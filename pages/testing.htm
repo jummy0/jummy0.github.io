@@ -30,14 +30,14 @@
 		function prepareScreenShake(){
 			var screenX = window.screenX;
 			var screenY = window.screenY;
-			newWindow = window.open('','',"height=100,width=200");
-			newWindow.document.write("<body style='background:black'><h1 style='color:yellow;font-family:Comic Sans MS, Comic Sans, sans-serif;font-weight:bold;font-size:70px;text-align:center'>ew.</h1></body>")
+			newWindow = window.open('','',"height=150,width=300");
+			newWindow.document.write("<body style='background:black'><h1 style='color:yellow;font-family:Comic Sans MS, Comic Sans, sans-serif;font-weight:bold;font-size:110px;text-align:center'>ew.</h1></body>")
 			var shake = setInterval(screenShake, 15);
 		}
 		
 		function screenShake(){
 			if (newWindow && !newWindow.closed){
-				newWindow.moveBy(Math.random()*16-8,Math.random()*16-8);
+				newWindow.moveBy(Math.random()*32-16,Math.random()*32-16);
 				newWindow.focus();
 			}else{
 				return;
