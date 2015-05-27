@@ -23,9 +23,9 @@
 	<a href="/index.htm">Home</a>
 	
 	<script type="text/javascript">
-		var request = new XMLHttpRequest();
 		getQuote();
 		function getQuote(){
+			var request = new XMLHttpRequest();
 			var fileContent = this.responseText;
 			var fileContentLines = fileContent.split( '\n' );
 			var randomLineIndex = Math.floor( Math.random() * fileContentLines.length );
