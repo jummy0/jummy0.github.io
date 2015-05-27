@@ -13,35 +13,16 @@
 		rainbarf best 1994
 	</div>
 	<a href=bestface.htm><img id=dancepig src=/res/dancepig.gif style="width:30%; margin:0 auto 4em auto" /></a><br>
-	<button onclick="prepareScreenShake()"><span style="color:black;font-size:20px;margin:0 auto;">umg nu</span></button><br>	
 		
 	<a href="/index.htm">Home</a>
 	<script type="text/javascript">
 		var rotation = 0;
 		var interval = setInterval(spinPig, 15);
 		var pig = document.getElementById("dancepig");
-		var newWindow;
 		
 		function spinPig(){
 			rotation += 1;
 			pig.style.transform = "rotate(".concat(rotation).concat("deg)");
-		}
-		
-		function prepareScreenShake(){
-			var screenX = window.screenX;
-			var screenY = window.screenY;
-			newWindow = window.open('','',"height=150,width=300");
-			newWindow.document.write("<body style='background:black'><h1 style='color:yellow;font-family:Comic Sans MS, Comic Sans, sans-serif;font-weight:bold;font-size:110px;text-align:center'>ew.</h1></body>")
-			var shake = setInterval(screenShake, 15);
-		}
-		
-		function screenShake(){
-			if (newWindow && !newWindow.closed){
-				newWindow.moveBy(Math.random()*32-16,Math.random()*32-16);
-				newWindow.focus();
-			}else{
-				return;
-			}
 		}
 	</script>
 </body>	
