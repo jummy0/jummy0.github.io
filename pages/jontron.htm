@@ -26,7 +26,7 @@
 		getQuote();
 		function getQuote(){
 			var request = new XMLHttpRequest();
-			request = function(){
+			request.onload = function(){
 				var fileContent = this.responseText;
 				var fileContentLines = fileContent.split( '\n' );
 				var randomLineIndex = Math.floor( Math.random() * fileContentLines.length );
