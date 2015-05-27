@@ -29,11 +29,12 @@
 		function prepareScreenShake(){
 			var screenX = window.screenX;
 			var screenY = window.screenY;
-			var shake = setInterval(screenShake, 15);
+			/*var shake = setInterval(screenShake, 15);*/
+			window.moveTo(screenX+25,screenY+25);
 		}
 		
 		function screenShake(){
-			window.moveTo(screenX+25,screenY+25);
+			
 		}
 	</script>
 </body>	
