@@ -19,7 +19,7 @@
 	<br>
 	There are currently <span id="phrase-count">some number of</span> quotes to pick from.<br>
 	I'm currently in the process of adding YouTube links to these quotes.<br>
-	<button onclick="getQuote()">Click here for another quote.</button><br>
+	<button onclick="getQuote()" style="color:black;font-size:12pt">Click here for another quote.</button><br>
 	<a href="/index.htm">Home</a>
 	
 	<script type="text/javascript">
@@ -32,10 +32,9 @@
 			var randomLine = fileContentLines[ randomLineIndex ];
 			document.getElementById( 'random-phrase' ).innerHTML = randomLine;
 			document.getElementById( 'phrase-count' ).innerHTML = fileContentLines.length;
+			request.open( 'GET', 'jontron.txt', true );
+			request.send();
 		}
-	</script>
-request.open( 'GET', 'jontron.txt', true );
-request.send();
 	</script>
 </body>	
 </html>
