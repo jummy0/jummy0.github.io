@@ -10,19 +10,32 @@
 <body style="background-image:url(/res/rainbarf.bmp); background-size:16%">
 	<h1 class=gold>ew.</h1><br>
 	<div class=info>
-		rainbarf best 1994
+		rainbarf best 1994<br>
+		Current grade: <input type="text" name="currentgrade">%<br>
+		Desired grade: <input type="text" name="desiredgrade">%<br>
+		Final is worth: <input type="text" name="finalworth">%<br>
+		<button onclick="calculateFinal()">GO!</button>
+		<div id="requirement"></div>
 	</div>
 	<a href=bestface.htm><img id=dancepig src=/res/dancepig.gif style="width:30%; margin:0 auto 4em auto" alt="Rotating pig" /></a><br>
 		
 	<a href="/index.htm">Home</a>
 	<script type="text/javascript">
-		var rotation = 0;
-		var interval = setInterval(spinPig, 15);
-		var pig = document.getElementById("dancepig");
-		
-		function spinPig(){
-			rotation += 1;
-			pig.style.transform = "rotate(".concat(rotation).concat("deg)");
+		function calculateFinal(){
+			var currentGrade = document.getElementById("currentgrade");
+			var desiredGrade = document.getElementById("desiredgrade");
+			var finalWorth = document.getElementById("finalworth");
+			var requirement = (desiredGrade-currentGrade)/finalWorth*100;
+			if (requirement<100){
+				if (requirement<0)
+				{
+					document.getElementById("requirement").innerHTML = "You'd get your desired grade even if you didn't take the final. You're fine.";
+				}else{
+					document.getElementById("requirement").innerHTML = "You need " + requirement.toString() + "% on your final.";
+				}
+			}else{
+				document.getElementById("requirement").innerHTML = "You're screwed.";
+			}
 		}
 	</script>
 </body>	
