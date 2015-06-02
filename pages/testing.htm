@@ -25,17 +25,17 @@
 			var currentGrade = document.getElementById("currentgrade").value;
 			var desiredGrade = document.getElementById("desiredgrade").value;
 			var finalWorth = document.getElementById("finalworth").value;
-			var requirement = (desiredGrade-currentGrade)/finalWorth*100;
-			/*if (requirement<100){
+			var requirement = (desiredGrade-(1-(finalWorth/100))*currentGrade)*(1/(finalWorth/100))
+			if (requirement<100){
 				if (requirement<0)
 				{
 					document.getElementById("requirement").innerHTML = "You'd get your desired grade even if you didn't take the final. You're fine.";
-				}else{*/
-					document.getElementById("requirement").innerHTML = "You need " + requirement.toString() + "% on your final." + currentGrade.toString();
-				/*}
+				}else{
+					document.getElementById("requirement").innerHTML = "You need " + requirement.toString() + "% on your final. " + currentGrade.toString();
+				}
 			}else{
 				document.getElementById("requirement").innerHTML = "You're screwed.";
-			}*/
+			}
 		}
 	</script>
 </body>	
