@@ -14,7 +14,7 @@
 		Current grade: <input type="text" name="currentgrade" style="color:black">%<br>
 		Desired grade: <input type="text" name="desiredgrade" style="color:black">%<br>
 		Final is worth: <input type="text" name="finalworth" style="color:black">%<br>
-		<button onclick="calculateFinal()">GO!</button>
+		<button onclick="calculateFinal()" style="color:black">GO!</button>
 		<div id="requirement"></div>
 	</div>
 	<a href=bestface.htm><img id=dancepig src=/res/dancepig.gif style="width:30%; margin:0 auto 4em auto" alt="Rotating pig" /></a><br>
@@ -26,16 +26,16 @@
 			var desiredGrade = document.getElementById("desiredgrade");
 			var finalWorth = document.getElementById("finalworth");
 			var requirement = (desiredGrade-currentGrade)/finalWorth*100;
-			if (requirement<100){
+			/*if (requirement<100){
 				if (requirement<0)
 				{
 					document.getElementById("requirement").innerHTML = "You'd get your desired grade even if you didn't take the final. You're fine.";
-				}else{
+				}else{*/
 					document.getElementById("requirement").innerHTML = "You need " + requirement.toString() + "% on your final.";
-				}
+				/*}
 			}else{
 				document.getElementById("requirement").innerHTML = "You're screwed.";
-			}
+			}*/
 		}
 	</script>
 </body>	
