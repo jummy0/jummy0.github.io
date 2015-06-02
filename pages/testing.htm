@@ -11,9 +11,9 @@
 	<h1 class=gold>ew.</h1><br>
 	<div class=info>
 		rainbarf best 1994<br>
-		Current grade: <input type="text" id="currentgrade" style="color:black">%<br>
-		Desired grade: <input type="text" id="desiredgrade" style="color:black">%<br>
-		Final is worth: <input type="text" id="finalworth" style="color:black">%<br>
+		Current grade: <input type="text" id="currentgrade" name="currentgrade" style="color:black">%<br>
+		Desired grade: <input type="text" id="desiredgrade" name="desiredgrade" style="color:black">%<br>
+		Final is worth: <input type="text" id="finalworth" name="finalworth" style="color:black">%<br>
 		<button onclick="calculateFinal()" style="color:black">GO!</button>
 		<div id="requirement"></div>
 	</div>
@@ -22,9 +22,9 @@
 	<a href="/index.htm">Home</a>
 	<script type="text/javascript">
 		function calculateFinal(){
-			var currentGrade = document.getElementById("currentgrade");
-			var desiredGrade = document.getElementById("desiredgrade");
-			var finalWorth = document.getElementById("finalworth");
+			var currentGrade = document.getElementById("currentgrade").value;
+			var desiredGrade = document.getElementById("desiredgrade").value;
+			var finalWorth = document.getElementById("finalworth").value;
 			var requirement = (desiredGrade-currentGrade)/finalWorth*100;
 			/*if (requirement<100){
 				if (requirement<0)
