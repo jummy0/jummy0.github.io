@@ -48,7 +48,7 @@
 			}else{
 				document.getElementById("requirement").innerHTML = "You're screwed.";
 			}
-			document.getElementById("requirement").innerHTML += "<br>Your final grade could be anywhere from " + Math.min(minPossible*100)/100 + "% to " + Math.min(maxPossible*100)/100 + "%.";
+			document.getElementById("requirement").innerHTML += "<br>Your final grade could be anywhere from " + Math.floor(minPossible*100)/100 + "% to " + Math.floor(maxPossible*100)/100 + "%.";
 		}
 	</script>
 </body>	
