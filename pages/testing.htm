@@ -10,7 +10,6 @@
 <body style="background-image:url(/res/rainbarf.bmp); background-size:16%">
 	<h1 class=gold>ew.</h1><br>
 	<div class=info>
-		ye
 		<div style="width:50%;float:left">
 			Current grade: <input type="text" id="currentgrade" name="currentgrade" style="color:black">%<br>
 			Desired grade: <input type="text" id="desiredgrade" name="desiredgrade" style="color:black">%<br>
@@ -35,7 +34,7 @@
 			var numQs = document.getElementById("numQs").value;
 			var requirement = (desiredGrade-(1-(finalWorth/100))*currentGrade)*(1/(finalWorth/100));
 			var minPossible = (1-(finalWorth/100))*currentGrade;
-			var maxPossible = (1-(finalWorth/100))*currentGrade+finalWorth;
+			var maxPossible = (1-(finalWorth/100))*currentGrade+(finalWorth+0);
 			if (requirement<=100){
 				if (requirement<0)
 				{
