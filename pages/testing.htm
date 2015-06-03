@@ -46,6 +46,7 @@
 			}else{
 				document.getElementById("requirement").innerHTML = "You're screwed.";
 			}
+			document.getElementById("requirement").innerHTML += "Your final grade can be anywhere from " + (1-(finalWorth/100))*currentGrade) + "% to " + (1-(finalWorth/100))*currentGrade)+finalWorth + "%.";
 		}
 	</script>
 </body>	
