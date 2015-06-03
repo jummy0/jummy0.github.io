@@ -26,7 +26,7 @@
 			var desiredGrade = document.getElementById("desiredgrade").value;
 			var finalWorth = document.getElementById("finalworth").value;
 			var requirement = (desiredGrade-(1-(finalWorth/100))*currentGrade)*(1/(finalWorth/100));
-			if (requirement<100){
+			if (requirement<=100){
 				if (requirement<0)
 				{
 					document.getElementById("requirement").innerHTML = "You'd get your desired grade even if you didn't take the final. You're fine.";
