@@ -33,6 +33,8 @@
 			var finalWorth = document.getElementById("finalworth").value;
 			var numQs = document.getElementById("numQs").value;
 			var requirement = (desiredGrade-(1-(finalWorth/100))*currentGrade)*(1/(finalWorth/100));
+			var minPossible = (1-(finalWorth/100))*currentGrade;
+			var maxPossible = (1-(finalWorth/100))*currentGrade+finalWorth;
 			if (requirement<=100){
 				if (requirement<0)
 				{
@@ -46,7 +48,7 @@
 			}else{
 				document.getElementById("requirement").innerHTML = "You're screwed.";
 			}
-			document.getElementById("requirement").innerHTML += "<br>Your final grade could be anywhere from " + ((1-(finalWorth/100))*currentGrade).toString() + "% to " + (((1-(finalWorth/100))*currentGrade)+finalWorth).toString() + "%.";
+			document.getElementById("requirement").innerHTML += "<br>Your final grade could be anywhere from " + Math.min(minPossible*100)/100 + "% to " + Math.min(maxPossible*100)/100 + "%.";
 		}
 	</script>
 </body>	
