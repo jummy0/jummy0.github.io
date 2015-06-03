@@ -34,7 +34,7 @@
 			var numQs = document.getElementById("numQs").value;
 			var requirement = (desiredGrade-(1-(finalWorth/100))*currentGrade)*(1/(finalWorth/100));
 			var minPossible = (1-(finalWorth/100))*currentGrade;
-			var maxPossible = (1-(finalWorth/100))*currentGrade+(finalWorth+0);
+			var maxPossible = (1-(finalWorth/100))*currentGrade+(finalWorth*1.);
 			if (requirement<=100){
 				if (requirement<0)
 				{
