@@ -39,7 +39,7 @@
 					document.getElementById("requirement").innerHTML = "You'd get your desired grade even if you didn't take the final. You're fine.";
 				}else{
 					document.getElementById("requirement").innerHTML = "You need " + (Math.ceil(requirement*100)/100).toString() + "% on your final.";
-					if (numQs!=null){
+					if (numQs!=""){
 						document.getElementById("requirement").innerHTML += "<br>That's " + Math.ceil((requirement/100)*numQs) + " out of " + numQs + " questions.";
 					}
 				}
