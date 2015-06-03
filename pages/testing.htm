@@ -10,11 +10,17 @@
 <body style="background-image:url(/res/rainbarf.bmp); background-size:16%">
 	<h1 class=gold>ew.</h1><br>
 	<div class=info>
-		Current grade: <input type="text" id="currentgrade" name="currentgrade" style="color:black">%<br>
-		Desired grade: <input type="text" id="desiredgrade" name="desiredgrade" style="color:black">%<br>
-		Final is worth: <input type="text" id="finalworth" name="finalworth" style="color:black">%<br>
-		<button onclick="calculateFinal()" style="color:black">GO!</button>
-		<div id="requirement"></div>
+		<div style="width:50%;float:left">
+			Current grade: <input type="text" id="currentgrade" name="currentgrade" style="color:black">%<br>
+			Desired grade: <input type="text" id="desiredgrade" name="desiredgrade" style="color:black">%<br>
+			Final is worth: <input type="text" id="finalworth" name="finalworth" style="color:black">%<br>
+		</div>
+		<div style="width:50%;float:right;text-align:right">
+			Optional stuff:<br>
+			# of questions: <input type="text" id="numQs" name="numQs" style="color:black"><br>
+		</div>
+		<button onclick="calculateFinal()" style="color:black;margin:0 auto;">GO!</button>
+		<div id="requirement" style="text-align:center"></div>
 	</div>
 	<a href=bestface.htm><img id=dancepig src=/res/dancepig.gif style="width:30%; margin:0 auto 4em auto" alt="Pig" /></a><br>
 		
@@ -24,6 +30,7 @@
 			var currentGrade = document.getElementById("currentgrade").value;
 			var desiredGrade = document.getElementById("desiredgrade").value;
 			var finalWorth = document.getElementById("finalworth").value;
+			var numQs = document.getElementById("numQs").value;
 			var requirement = (desiredGrade-(1-(finalWorth/100))*currentGrade)*(1/(finalWorth/100));
 			if (requirement<=100){
 				if (requirement<0)
@@ -31,6 +38,9 @@
 					document.getElementById("requirement").innerHTML = "You'd get your desired grade even if you didn't take the final. You're fine.";
 				}else{
 					document.getElementById("requirement").innerHTML = "You need " + (Math.ceil(requirement*100)/100).toString() + "% on your final.";
+					if (numQs!=null){
+						document.getElementById("requirement").innerHTML += "<br>That's " + (requirement/100)*numQs + " out of " + numQs + " questions.";
+					}
 				}
 			}else{
 				document.getElementById("requirement").innerHTML = "You're screwed.";
