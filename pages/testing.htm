@@ -19,6 +19,7 @@
 			Optional stuff:<br>
 			# of questions: <input type="text" id="numQs" name="numQs" style="color:black"><br>
 		</div>
+		<div style="clear:both;"></div>
 		<button onclick="calculateFinal()" style="color:black;margin:0 auto;">GO!</button>
 		<div id="requirement" style="text-align:center"></div>
 	</div>
@@ -39,7 +40,7 @@
 				}else{
 					document.getElementById("requirement").innerHTML = "You need " + (Math.ceil(requirement*100)/100).toString() + "% on your final.";
 					if (numQs!=null){
-						document.getElementById("requirement").innerHTML += "<br>That's " + (requirement/100)*numQs + " out of " + numQs + " questions.";
+						document.getElementById("requirement").innerHTML += "<br>That's " + Math.ceil((requirement/100)*numQs) + " out of " + numQs + " questions.";
 					}
 				}
 			}else{
