@@ -38,15 +38,16 @@
 			if (requirement<=100){
 				if (requirement<0)
 				{
-					document.getElementById("requirement").innerHTML = "You'll get your desired grade no matter what.";
+					document.getElementById("requirement").innerHTML = "You'll get your desired grade no matter what.<br>You would need " + Math.ceil(requirement*100)/100 + "% on your final.";
 				}else{
-					document.getElementById("requirement").innerHTML = "You need " + (Math.ceil(requirement*100)/100).toString() + "% on your final.";
-					if (numQs!=""){
-						document.getElementById("requirement").innerHTML += "<br>That's " + Math.ceil((requirement/100)*numQs) + " out of " + numQs + " questions.";
-					}
+					document.getElementById("requirement").innerHTML = "You need " + Math.ceil(requirement*100)/100 + "% on your final.";
+		
 				}
 			}else{
-				document.getElementById("requirement").innerHTML = "You're screwed.";
+				document.getElementById("requirement").innerHTML = "You're screwed.<br>You would need " + Math.ceil(requirement*100)/100 + "% on your final.";
+			}
+			if (numQs!=""){
+				document.getElementById("requirement").innerHTML += "<br>That's " + Math.ceil((requirement/100)*numQs) + " out of " + numQs + " questions.";
 			}
 			document.getElementById("requirement").innerHTML += "<br>Your final grade could be anywhere from " + Math.floor(minPossible*100)/100 + "% to " + Math.floor(maxPossible*100)/100 + "%.";
 		}
