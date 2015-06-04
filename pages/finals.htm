@@ -21,7 +21,15 @@
 		</div>
 		<div style="clear:both;"></div>
 		<button onclick="calculateFinal()" style="color:black;width:100%;font-size:20pt">GO!</button>
-		<div id="requirement" style="text-align:center"></div>
+		<div hidden>
+			<div id="requirement" style="text-align:center"></div>
+			<table>
+				<tr>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
 	</div>
 	<a href=bestface.htm><img id=dancepig src=/res/dancepig.gif style="margin:0 auto 4em auto" alt="Pig" /></a><br>
 		
@@ -35,6 +43,7 @@
 			var requirement = (desiredGrade-(1-(finalWorth/100))*currentGrade)*(1/(finalWorth/100));
 			var minPossible = (1-(finalWorth/100))*currentGrade;
 			var maxPossible = (1-(finalWorth/100))*currentGrade+(finalWorth*1.);
+			document.getElementById("requirement").removeAttribute("hidden");
 			if (requirement<=100){
 				if (requirement<0)
 				{
