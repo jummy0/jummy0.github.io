@@ -38,13 +38,13 @@
 			if (requirement<=100){
 				if (requirement<0)
 				{
-					document.getElementById("requirement").innerHTML = "You'll get your desired grade no matter what.<br>You would need " + Math.ceil(requirement*100)/100 + "% on your final.";
+					document.getElementById("requirement").innerHTML = "<span style='color:#aaf'>You'll get your desired grade no matter what.</span><br>You would need " + Math.ceil(requirement*100)/100 + "% on your final.";
 				}else{
 					document.getElementById("requirement").innerHTML = "You need " + Math.ceil(requirement*100)/100 + "% on your final.";
 		
 				}
 			}else{
-				document.getElementById("requirement").innerHTML = "You're screwed.<br>You would need " + Math.ceil(requirement*100)/100 + "% on your final.";
+				document.getElementById("requirement").innerHTML = "<span style='color:#faa'>You can not get your desired grade.</span><br>You would need " + Math.ceil(requirement*100)/100 + "% on your final.";
 			}
 			if (numQs!=""){
 				document.getElementById("requirement").innerHTML += "<br>That's " + Math.ceil((requirement/100)*numQs) + " out of " + numQs + " questions.";
