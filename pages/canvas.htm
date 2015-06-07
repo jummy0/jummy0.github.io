@@ -10,29 +10,35 @@
 	<canvas id="canvas" width="100%" height="100%"></canvas>
 	<script>
 		var canvas = document.getElementById('canvas');
-		var con = canvas.getContext('2d');
+		var ctx = canvas.getcontext('2d');
+		ctx.canvas.width  = window.innerWidth;
+		ctx.canvas.height = window.innerHeight;
 		
 		// Teal BG
-		con.fillStyle = "#088";
-		con.fillRect(0,0,100%,100%);
+		ctx.fillStyle = "#088";
+		ctx.fillRect(0, 0, 100%, 100%);
 		
 		// Window
-		con.fillStyle = "#CCC";
-		con.fillRect(50,50,400,300);
+		ctx.fillStyle = "#CCC";
+		ctx.fillRect(50, 50, 400, 300);
 		
 		// Title bar
-		var titleBarGradient = con.createLinearGradient(0,0,10,0);
-		titleBarGradient.addColorStop(0,"#008");
-		titleBarGradient.addColorStop(1,"#09D");
-		con.fillStyle = titleBarGradient;
-		con.fillRect(54,54,392,292);
+		var titleBarGradient = ctx.createLinearGradient(0, 0, 10, 0);
+		titleBarGradient.addColorStop(0, "#008");
+		titleBarGradient.addColorStop(1, "#09D");
+		ctx.fillStyle = titleBarGradient;
+		ctx.fillRect(54, 54, 392, 292);
 		
-		// Window Icon
-		var windowIcon = new Image();
-		windowIcon.onload = function() {
-			con.drawImage(windowIcon, 56, 55, 16, 16);
+		// Window icon
+		var windowicon = new Image();
+		windowicon.onload = function() {
+			ctx.drawImage(windowicon, 56, 55, 16, 16);
 		};
-		windowIcon.src = '/res/jon.jpg';
+		windowicon.src = '/res/jon.jpg';
+		
+		// Window Title
+		ctx.font = "9px Verdana";
+		ctx.fillText("Swood Grommets", 75, 58);
 	</script>
 </body>
 </html>
