@@ -69,7 +69,7 @@
 			ctx.fillRect(fWin.xPos, fWin.yPos, fWin.width, fWin.height);
 			
 			// Title bar
-			var titleBarGradient = ctx.createLinearGradient(0, 0, fWin.width-titlePadding*2, 0);
+			var titleBarGradient = ctx.createLinearGradient(fWin.xPos+titlePadding, 0, fWin.xPos+fWin.width-titlePadding*2, 0);
 			titleBarGradient.addColorStop(0, "#008");
 			titleBarGradient.addColorStop(1, "#09D");
 			ctx.fillStyle = titleBarGradient;
