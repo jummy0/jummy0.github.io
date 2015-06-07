@@ -1,0 +1,38 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<title>asdf</title>
+	<link rel="stylesheet" type="text/css" href="/default.css">
+	<link rel="stylesheet" type="text/css" href="/dark.css">
+	<meta charset="uTf-8" />
+</head>
+<body>
+	<canvas id="canvas" width="100%" height="100%"></canvas>
+	<script>
+		var canvas = document.getElementById('canvas');
+		var con = canvas.getContext('2d');
+		
+		// Teal BG
+		con.fillStyle = "#088";
+		con.fillRect(0,0,100%,100%);
+		
+		// Window
+		con.fillStyle = "#CCC";
+		con.fillRect(50,50,400,300);
+		
+		// Title bar
+		var titleBarGradient = con.createLinearGradient(0,0,10,0);
+		titleBarGradient.addColorStop(0,"#008");
+		titleBarGradient.addColorStop(1,"#09D");
+		con.fillStyle = titleBarGradient;
+		con.fillRect(54,54,392,292);
+		
+		// Window Icon
+		var windowIcon = new Image();
+		windowIcon.onload = function() {
+			con.drawImage(windowIcon, 56, 55, 16, 16);
+		};
+		windowIcon.src = '/res/jon.jpg';
+	</script>
+</body>
+</html>
