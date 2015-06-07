@@ -81,6 +81,11 @@
 				ctx.drawImage(windowIcon, fWin.xPos+titlePadding+2, fWin.yPos+titlePadding+1, titleHeight-2, titleHeight-2);
 			};
 			windowIcon.src = fWin.icon;
+			var swood = new Image();
+			swood.onload = function() {
+				ctx.drawImage(swood, fWin.xPos+titlePadding+4, fWin.yPos+titleheight+titlePadding+4, 208, 84);
+			};
+			swood.src = "/res/swood.png";
 			
 			// Window Title and such
 			ctx.fillStyle = "#fff";
