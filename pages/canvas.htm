@@ -80,10 +80,11 @@
 			};
 			windowIcon.src = fWin.icon;
 			
-			// Window Title
+			// Window Title and such
 			ctx.fillStyle = "#fff";
 			ctx.font = "bold " + titleHeight/2 +"px Verdana";
 			ctx.fillText(fWin.title, fWin.xPos+titlePadding+titleHeight+3, fWin.yPos+titlePadding+titleHeight*0.25);
+			ctx.fillText("×", fWin.xPos+fWin.width-titleHeight/2-titlePadding-2);
 		}
 		
 		can.onmousedown = function(){
