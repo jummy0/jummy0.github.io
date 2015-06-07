@@ -22,6 +22,9 @@
 		var can = document.getElementById("canvas");
 		var ctx = can.getContext("2d");
 		
+		var titlePadding = 4;
+		var titleHeight = 18;
+		
 		initialize();
 		 
 		function initialize() {
@@ -52,23 +55,23 @@
 			ctx.fillRect(fWin.xPos, fWin.yPos, fWin.width, fWin.height);
 			
 			// Title bar
-			var titleBarGradient = ctx.createLinearGradient(0, 0, fWin.width-8, 0);
+			var titleBarGradient = ctx.createLinearGradient(0, 0, fWin.width-titlePadding*2, 0);
 			titleBarGradient.addColorStop(0, "#008");
 			titleBarGradient.addColorStop(1, "#09D");
 			ctx.fillStyle = titleBarGradient;
-			ctx.fillRect(fWin.xPos+4, fWin.yPos+4, fWin.width-8, 18);
+			ctx.fillRect(fWin.xPos+titlePadding, fWin.yPos+titlePadding, fWin.width-titlePadding*2, titleHeight);
 			
 			// Window icon
 			var windowIcon = new Image();
 			windowIcon.onload = function() {
-				ctx.drawImage(windowIcon, fWin.xPos+6, fWin.xPos+5, 16, 16);
+				ctx.drawImage(windowIcon, fWin.xPos+titlePadding+2, fWin.xPos+titlePadding+1, titlePadding-2, titlePadding-2);
 			};
 			windowIcon.src = fWin.icon;
 			
 			// Window Title
 			ctx.fillStyle = "#fff";
-			ctx.font = "bold 9px Verdana";
-			ctx.fillText(fWin.title, fWin.xPos+25, fWin.yPos+15);
+			ctx.font = "bold " + titleHeight/2 +"px Verdana";
+			ctx.fillText(fWin.title, fWin.xPos+titlePadding+titleHeight+3, fWin.yPos+titlePadding+titleHeight/2+2);
 		}
 	</script>
 </body>
