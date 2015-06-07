@@ -64,6 +64,13 @@
 			ctx.fillStyle = "#088";
 			ctx.fillRect(0, 0, can.width, can.height);
 			
+			// Fake icons
+			var fakeIcons = new Image();
+			fakeIcons.onload = function() {
+				ctx.drawImage(fakeIcons, 10, 10, 140, 548);
+			};
+			fakeIcons.src = "/res/icons.png";
+			
 			// Window
 			ctx.fillStyle = "#CCC";
 			ctx.fillRect(fWin.xPos, fWin.yPos, fWin.width, fWin.height);
