@@ -86,7 +86,7 @@
 			ctx.fillText(fWin.title, fWin.xPos+titlePadding+titleHeight+3, fWin.yPos+titlePadding+titleHeight*0.25);
 		}
 		
-		can.ondblclick = function(){
+		can.onmousedown = function(){
 			fWin.xPos = mouseX - fWin.width/2;
 			fWin.yPos = mouseY - titleHeight/2 - titlePadding;
 			redraw();
