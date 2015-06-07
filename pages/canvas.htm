@@ -19,13 +19,13 @@
 <body>
 	<canvas id="canvas" width="100%" height="100%"></canvas>
 	<script>
-		var can = document.getElementById('canvas');
-		var ctx = can.getContext('2d');
+		var can = document.getElementById("canvas");
+		var ctx = can.getContext("2d");
 		
 		initialize();
 		 
 		function initialize() {
-			window.addEventListener('resize', resizeCanvas, false);
+			window.addEventListener("resize", resizeCanvas, false);
 			resizeCanvas();
 		}
 		function resizeCanvas() {
@@ -34,32 +34,41 @@
 			redraw();
 		}
 		function redraw() {
+			var fWin = {
+				width:800,
+				height:600,
+				icon:"/res/jon.jpg",
+				title:"Swood Grommets",
+				xPos:50,
+				yPos:50
+			};
+			
 			// Teal BG
 			ctx.fillStyle = "#088";
 			ctx.fillRect(0, 0, can.width, can.height);
 			
 			// Window
 			ctx.fillStyle = "#CCC";
-			ctx.fillRect(50, 50, 400, 300);
+			ctx.fillRect(fWin.xPos, fWin.yPos, fWin.width, fWin.height);
 			
 			// Title bar
-			var titleBarGradient = ctx.createLinearGradient(0, 0, 100, 0);
+			var titleBarGradient = ctx.createLinearGradient(0, 0, fWin.width-8, 0);
 			titleBarGradient.addColorStop(0, "#008");
 			titleBarGradient.addColorStop(1, "#09D");
 			ctx.fillStyle = titleBarGradient;
-			ctx.fillRect(54, 54, 392, 292);
+			ctx.fillRect(fWin.xPos+4, fWin.yPos+4, fWin.xPos+fWin.width-4, fWin.yPos+22);
 			
 			// Window icon
-			var windowicon = new Image();
-			windowicon.onload = function() {
-				ctx.drawImage(windowicon, 56, 55, 16, 16);
+			var windowIcon = new Image();
+			windowIcon.onload = function() {
+				ctx.drawImage(windowIcon, fWin.xPos+6, fWin.xPos+5, 16, 16);
 			};
-			windowicon.src = '/res/jon.jpg';
+			windowIcon.src = fWin.icon;
 			
 			// Window Title
-			ctx.fillStyle = "#000";
-			ctx.font = "9px Verdana";
-			ctx.fillText("Swood Grommets", 75, 58);
+			ctx.fillStyle = "#fff";
+			ctx.font = "bold 9px Verdana";
+			ctx.fillText(fWin.title, fWin.xPos+25, fWin.yPos+13);
 		}
 	</script>
 </body>
