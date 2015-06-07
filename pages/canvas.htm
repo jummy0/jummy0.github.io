@@ -13,10 +13,12 @@
 		var ctx = canvas.getcontext('2d');
 		ctx.canvas.width  = window.innerWidth;
 		ctx.canvas.height = window.innerHeight;
+		cWidth = parseInt(document.getElementById("canvas").getAttribute("width"));
+		cHeight = parseInt(document.getElementById("canvas").getAttribute("height"));
 		
 		// Teal BG
 		ctx.fillStyle = "#088";
-		ctx.fillRect(0, 0, 100%, 100%);
+		ctx.fillRect(0, 0, cWidth, cHeight);
 		
 		// Window
 		ctx.fillStyle = "#CCC";
