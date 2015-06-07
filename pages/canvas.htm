@@ -23,7 +23,7 @@
 		var ctx = can.getContext("2d");
 		
 		var titlePadding = 4; //4
-		var titleHeight = 36; //18
+		var titleHeight = 32; //18
 		
 		initialize();
 		 
@@ -45,6 +45,8 @@
 				xPos:50,
 				yPos:50
 			};
+			
+			ctx.textBaseline = "top";
 			
 			// Teal BG
 			ctx.fillStyle = "#088";
@@ -71,7 +73,7 @@
 			// Window Title
 			ctx.fillStyle = "#fff";
 			ctx.font = "bold " + titleHeight/2 +"px Verdana";
-			ctx.fillText(fWin.title, fWin.xPos+titlePadding+titleHeight+3, fWin.yPos+titlePadding+titleHeight*0.75);
+			ctx.fillText(fWin.title, fWin.xPos+titlePadding+titleHeight+3, fWin.yPos+titlePadding+titleHeight*0.25);
 		}
 	</script>
 </body>
