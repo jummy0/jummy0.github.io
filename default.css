@@ -22,7 +22,7 @@ div.twocol {
 	width: 48%;
 	margin: 1em auto;
 	text-align: center;
-	/* include "float:left" or "float:right" inline. */
+	/* include "float:left" or "float:right" inline, and "clear:both" at the start of a line */
 }
 
 div p {
