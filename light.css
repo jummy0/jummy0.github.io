@@ -2,7 +2,7 @@
 	color: black;
 }
 
-div.info {
+div.info, div.twocol {
 	background-color: #ffc;
 }
 
