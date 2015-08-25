@@ -18,11 +18,11 @@ div.twocol {
 	padding: 15px;
 	border-radius: 10px;
 	box-sizing: border-box;
-	clear:both;
+	clear: both;
 	width: 48%;
-	float: left;
 	margin: 0 auto;
 	text-align: center;
+	/* include "float:left" or "float:right" inline.
 }
 
 div p {
