@@ -11,7 +11,7 @@ Some kind of ridiculous HTML/CSS/JS playground. None of it makes sense.
 &nbsp;
 
 ## Crouton
-A series of pages featuring a small image of a crouton. Clicking on the correct crouton links you to the next page.
+A series of pages featuring a small image of a crouton. Clicking the correct crouton links you to the next page.
 
 **With JS:** The croutons bob up and down slightly, and occasionally move around.
 
