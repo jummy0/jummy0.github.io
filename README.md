@@ -24,7 +24,7 @@ Clicking the large banner leads to a page written in broken English that claims 
 
 **With JS:** The "secret internet codes" appear at the bottom of the page.
 
-Clicking the smaller "Download" button below the banner links to a ZIP of the GitHub repo. The drop-down boxes do nothing.
+The smaller "Download" button at the bottom of the page links to a ZIP of the GitHub repo. The drop-down boxes do nothing.
 
 &nbsp;
 
