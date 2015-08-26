@@ -29,7 +29,7 @@ The smaller "Download" button at the bottom of the page links to a ZIP archive o
 &nbsp;
 
 ## Finals Calculator
-**With JS:** A calculator of how well you have to do on a final test to get a certain grade.
+**With JS:** A calculator of how well you have to do on a final exam to get a certain grade.
 
 The image of the dancing pig links to a colored ASCII-art image of one of my friends making a weird face.
 
