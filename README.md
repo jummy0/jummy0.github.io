@@ -1,4 +1,4 @@
-# jk314159.github.io a.k.a. "My Website is Terrible!"
+# jk314159.github.io, a.k.a. "My Website is Terrible!"
 Some kind of ridiculous HTML/CSS/JS playground. None of it makes sense.
 
 &nbsp;
