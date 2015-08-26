@@ -17,14 +17,17 @@ A series of pages featuring a small image of a crouton. Clicking the correct cro
 
 &nbsp;
 
-## 1990s-looking page / "Download Now!"
+## 1990s-looking page / "Download Now"
 A series of pages parodying the style of old webpages from the late 1990s and early 2000s. As such, it does not use an external stylesheet, and uses CSS animations to simulate the deprecated HTML "blink" tag, among other things.
 
-Clicking the large banner leads to a page written in broken English that claims to steal "secret internet codes" (i.e. randomly generated alphanumeric characters).
+Clicking the large banner leads to "Installation of computer viruses in the unit". 
+
+The small "Download" button at the bottom of the page links to a ZIP archive of the GitHub repo. The drop-down boxes do nothing.
+
+#### Installation of computer viruses in the unit
+A page written in broken English that claims to steal "secret internet codes" (i.e. randomly generated alphanumeric characters).
 
 **With JS:** The "secret internet codes" appear at the bottom of the page.
-
-The smaller "Download" button at the bottom of the page links to a ZIP archive of the GitHub repo. The drop-down boxes do nothing.
 
 &nbsp;
 
