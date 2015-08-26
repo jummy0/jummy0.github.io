@@ -28,5 +28,19 @@ The smaller "Download" button at the bottom of the page links to a ZIP archive o
 
 &nbsp;
 
-More info to be written.
+## Finals Calculator
+**With JS:** A calculator of how well you have to do on a final test to get a certain grade.
 
+The image of the dancing pig leads to a colored ASCII-art image of one of my friends making a weird face.
+
+**With JS:** From there, clicking on the "Click me!" button creates three pop-up windows that jitter around the screen (if pop-ups are allowed).
+
+&nbsp;
+
+## JonTron Quote Picker
+**With JS:** Picks a random [JonTron](http://www.youtube.com/user/JonTronShow) quote from a list. Some quotes link to their own YouTube videos.
+
+&nbsp;
+
+## HTML5 Canvas Testing
+**With JS:** Displays an image of a Windows 98-style desktop. Upon clicking, a window will move to the cursor's position.
