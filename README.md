@@ -31,7 +31,7 @@ The smaller "Download" button at the bottom of the page links to a ZIP archive o
 ## Finals Calculator
 **With JS:** A calculator of how well you have to do on a final test to get a certain grade.
 
-The image of the dancing pig leads to a colored ASCII-art image of one of my friends making a weird face.
+The image of the dancing pig links to a colored ASCII-art image of one of my friends making a weird face.
 
 **With JS:** From there, clicking on the "Click me!" button creates three pop-up windows that jitter around the screen (if pop-ups are allowed).
 
