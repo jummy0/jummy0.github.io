@@ -19,12 +19,14 @@
 	</tr></table>
 	<div class=info>crouton</div>
 	<br><a href="/index.htm">Exit the Realm of the Crouton</a>
+	
 	<script type="text/javascript">
 		var crouton = document.getElementById(crouton);
 		var interval = setInterval(croutonHover, 10);
 		var i;
+		var initialTop = parseInt(crouton.style.top);
 		function croutonHover() {
-			crouton.style.top = (Math.sin(i+0.)*5.).toString()+"px";
+			crouton.style.top = (Math.sin(i+0.)*5.+initialTop).toString()+"px";
 			i++;
 		}
 	</script>
