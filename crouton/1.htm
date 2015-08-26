@@ -24,7 +24,7 @@
 		var crouton = document.getElementById("crouton");
 		var interval = setInterval(croutonHover, 10);
 		var i;
-		var initialTop = parseInt(crouton.style.top);
+		var initialTop = parseInt(crouton.style.top, 10);
 		function croutonHover() {
 			crouton.style.top = (Math.sin(i+0.)*5.+initialTop);
 			console.log(crouton.style.top);
