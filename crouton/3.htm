@@ -9,17 +9,17 @@
 
 <body>
 	<h1 class=gold>Crouton</h1>
-	<a href="win.htm"><img src="/res/crouton.gif" alt="Crouton" id="crouton" style="position:relative; top:0; left:0;"/></a>
+	<a href="win.htm"><img src="/res/crouton.gif" alt="Crouton" id="crouton" style="position:relative; top:0; left:0; display:inline;"/></a>
 	<br><a href="/index.htm">Exit the Realm of the Crouton</a>
 	
 	<script type="text/javascript">
 		var crouton = document.getElementById("crouton");
-		var interval = setInterval(croutonHover, 50);
+		var interval = setInterval(croutonHover, 20);
 		var i = 0.;
 		function croutonHover() {
 			crouton.style.top = (Math.sin(i)*50).toString()+"px";
 			crouton.style.left = (Math.cos(i)*100).toString()+"px";
-			i+=0.2;
+			i+=0.07;
 		}
 	</script>
 </body>
