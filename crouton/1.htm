@@ -23,10 +23,10 @@
 	<script type="text/javascript">
 		var crouton = document.getElementById("crouton");
 		var interval = setInterval(croutonHover, 10);
-		var i;
+		var i = 0;
 		var initialTop = parseInt(crouton.style.top, 10);
 		function croutonHover() {
-			crouton.style.top = (Math.sin(i+0.)*5.+initialTop);
+			crouton.style.top = (Math.sin(i+0.)*5.+initialTop).toString+"px";
 			console.log(crouton.style.top);
 			i++;
 		}
