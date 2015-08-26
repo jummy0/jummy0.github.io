@@ -33,7 +33,7 @@ The smaller "Download" button at the bottom of the page links to a ZIP archive o
 
 The image of the dancing pig links to "Best Face 2k15".
 
-### Best Face 2k15
+#### Best Face 2k15
 A colored ASCII-art image of one of my friends making a weird face.
 
 **With JS:** From there, clicking on the "Click me!" button creates three pop-up windows that jitter around the screen (if pop-ups are allowed).
