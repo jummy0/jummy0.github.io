@@ -14,13 +14,19 @@
 	<h1 class=gold>Crouton</h1>
 	<table><tr>
 		<td>&rarr;</td>
-		<td><a href="2.htm"><img src="/res/crouton.gif" alt="Crouton"/></a></td>
+		<td><a href="2.htm"><img src="/res/crouton.gif" alt="Crouton" id="crouton"/></a></td>
 		<td>&larr;</td>
 	</tr></table>
 	<div class=info>crouton</div>
 	<br><a href="/index.htm">Exit the Realm of the Crouton</a>
-
+	<script type="text/javascript">
+		var crouton = document.getElementById("crouton");
+		var interval = setInterval(croutonHover, 10);
+		var i;
+		function croutonHover(){
+			crouton.style.top = Math.sin(i)*10;
+		}
+	</script>
 </body>
-
 
 </html>
