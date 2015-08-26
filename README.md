@@ -20,8 +20,6 @@ A series of pages featuring a small image of a crouton. Clicking on the correct 
 ## 1990s-looking page / "Download Now!"
 A series of pages parodying the style of old webpages from the late 1990s and early 2000s. As such, it does not use an external stylesheet, and uses CSS animations to simulate the deprecated HTML "blink" tag. Clicking the large banner leads to a page that claims to steal "secret internet codes" (i.e. random characters)
 
-&nbsp;
-
 **With JS:** The "secret internet codes" appear at the bottom of the page.
 
 Clicking the smaller "Download" button below the banner links to a ZIP of the GitHub repo. The drop-down boxes do nothing.
