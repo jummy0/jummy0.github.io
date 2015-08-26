@@ -1,6 +1,5 @@
 * {
 	font-family: Verdana, Arial, sans-serif;
-	border: 1px solid white;
 }
 
 em {
@@ -19,7 +18,6 @@ div.twocol {
 	padding: 15px;
 	border-radius: 10px;
 	box-sizing: border-box;
-	clear: both;
 	width: 48%;
 	margin: 1em auto;
 	text-align: center;
