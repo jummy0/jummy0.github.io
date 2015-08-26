@@ -18,7 +18,7 @@ A series of pages featuring a small image of a crouton. Clicking on the correct 
 &nbsp;
 
 ## 1990s-looking page / "Download Now!"
-A series of pages parodying the style of old webpages from the late 1990s and early 2000s. As such, it does not use an external stylesheet, and uses CSS animations to simulate the deprecated HTML "blink" tag.
+A series of pages parodying the style of old webpages from the late 1990s and early 2000s. As such, it does not use an external stylesheet, and uses CSS animations to simulate the deprecated HTML "blink" tag, among other things.
 
 Clicking the large banner leads to a page written in broken English that claims to steal "secret internet codes" (i.e. randomly generated alphanumeric characters).
 
