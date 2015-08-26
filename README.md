@@ -38,7 +38,7 @@ The image of the dancing pig links to a colored ASCII-art image of one of my fri
 &nbsp;
 
 ## JonTron Quote Picker
-**With JS:** Picks a random [JonTron](http://www.youtube.com/user/JonTronShow) quote from a list. Some quotes link to their own YouTube videos.
+**With JS:** Picks a random [JonTron](http://www.youtube.com/user/JonTronShow) quote from a list. Some quotes link to their own YouTube videos. Quotes may contain strong language.
 
 &nbsp;
 
