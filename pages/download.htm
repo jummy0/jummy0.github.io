@@ -53,7 +53,7 @@
 		var marquee = document.getElementById("marquee");
 		var interval = setInterval(moveMarquee, 20);
 		function moveMarquee() {
-			crouton.style.right = "-8px";
+			crouton.style.right = "8px";
 			if (parseInt(crouton.style.right,10) < 0){
 				crouton.style.left = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 			}
