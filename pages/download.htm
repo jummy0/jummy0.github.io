@@ -21,7 +21,7 @@
 			<span style='font-weight:bold; animation-duration: 500ms; animation-name: tgle; animation-iteration-count: infinite;'>&gt;LEGAL %100 DOWNLOAD COMPLETE TO PLAY NOW&lt;</span>
 		</a>
 	</div><br>
-	<marquee scrollamount=8>Order it now! . . . Online <i>Dot</i> Com!</marquee>
+	<span id="marquee" style="position:relative;">Order it now! . . . Online <em>Dot</em> Com!</span>
 	<img src="/res/sphere.gif" alt=Technology />
 	<div style="width:100%;">
 		Select your computer:
@@ -48,5 +48,16 @@
 		<a href="https://github.com/jk314159/jk314159.github.io/archive/master.zip" style="font-weight:bold"><img src="/res/download.gif" alt="Download!" /></a>
 	</div>
 	<a href="/index.htm" style="margin-top:3em">Back to the Future</a>
+	
+	<script type="text/javascript">
+		var marquee = document.getElementById("marquee");
+		var interval = setInterval(moveMarquee, 20);
+		function moveMarquee() {
+			crouton.style.right = "-8px";
+			if (parseInt(crouton.style.right,10) < 0){
+				crouton.style.left = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+			}
+		}
+	</script>
 </body>	
 </html>
