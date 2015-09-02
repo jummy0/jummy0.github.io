@@ -17,9 +17,11 @@
 	<script type="text/javascript">
 		var score = parseInt(getCookie("score"), 10);
 		if (isNaN(score)) {
+			score = 1;
 			setCookie("score", "1", 30);
 		}else{
-			setCookie("score", (score+1).toString(), 30);
+			score++;
+			setCookie("score", score.toString(), 30);
 		}
 		document.getElementById( "score" ).innerHTML = (score+1).toString();
 		
