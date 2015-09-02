@@ -13,7 +13,7 @@
 	</div>
 	<img src="/res/cookie1.png" style="margin-top:1em;" onclick="clickCookie()"/>
 	<div id="score" style="text-align:center; font-size:64px;"></div>
-	<p style="margin:2em auto;"><button onclick="resetScore()" style="color:red; font-size:12pt; font-weight:bold;">Reset Score</button></p>
+	<p style="margin:2em auto;"><button onclick="resetScore()" style="color:red; font-size:12pt; font-weight:bold;">Reset Progress</button></p>
 	<a href="/index.htm">Home</a>
 	
 	<script type="text/javascript">
@@ -52,6 +52,7 @@
 		
 		function resetScore() {
 			setCookie("score", "0", -1);
+			score = 0;
 			document.getElementById( "score" ).innerHTML = "0";
 		}
 	</script>
