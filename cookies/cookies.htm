@@ -24,7 +24,7 @@
 			score++;
 			setCookie("score", score.toString(), 30);
 		}
-		document.getElementById( "score" ).innerHTML = (score+1).toString();
+		document.getElementById( "score" ).innerHTML = score.toString();
 		
 		function setCookie(cname, cvalue, exdays) {
 			var d = new Date();
