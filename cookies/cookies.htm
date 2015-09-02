@@ -11,8 +11,9 @@
 	<div class=info style="text-align:center">
 		Cookie Refresher
 	</div>
-	<img src="/res/cookie1.png" />
+	<img src="/res/cookie1.png" style="margin-top:3em;" />
 	<div id="score" style="text-align:center; font-size:64px;"></div>
+	<button onclick="resetScore()" style="color:red;font-size:12pt;">Reset Score</button>
 	<a href="/index.htm">Home</a>
 	<script type="text/javascript">
 		var score = parseInt(getCookie("score"), 10);
@@ -41,7 +42,11 @@
 				if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
 			}
 			return "";
-		} 
+		}
+		
+		function resetScore() {
+			setCookie("score", "0", -1);
+		}
 	</script>
 </body>	
 </html>
