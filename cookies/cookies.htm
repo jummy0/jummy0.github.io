@@ -11,21 +11,26 @@
 	<div class=info style="text-align:center; font-size:24px;">
 		Cookie Refresher
 	</div>
-	<img src="/res/cookie1.png" style="margin-top:1em;" />
+	<img src="/res/cookie1.png" style="margin-top:1em;" onclick="clickCookie()"/>
 	<div id="score" style="text-align:center; font-size:64px;"></div>
 	<p style="margin:2em auto;"><button onclick="resetScore()" style="color:red; font-size:12pt; font-weight:bold;">Reset Score</button></p>
 	<a href="/index.htm">Home</a>
 	
 	<script type="text/javascript">
 		var score = parseInt(getCookie("score"), 10);
-		if (isNaN(score)) {
-			score = 1;
-			setCookie("score", "1", 30);
-		}else{
-			score++;
-			setCookie("score", score.toString(), 30);
-		}
+		if (isNaN(score)) score = 0;
 		document.getElementById( "score" ).innerHTML = score.toString();
+		
+		function clickCookie() {
+			if (isNaN(score)) {
+				score = 1;
+				setCookie("score", "1", 30);
+			}else{
+				score++;
+				setCookie("score", score.toString(), 30);
+			}
+			document.getElementById( "score" ).innerHTML = score.toString();
+		}
 		
 		function setCookie(cname, cvalue, exdays) {
 			var d = new Date();
