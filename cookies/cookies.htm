@@ -8,8 +8,9 @@
 </head>
 <body>
 	<br>
-	<div class=info style="text-align:center; font-size:24px;">
-		Cookie Clicker
+	<div class=info style="text-align:center;">
+		<p style="font-size:24px">Cookie Clicker</p>
+		For every click, and every minute you stay on this page, you get an extra cookie.
 	</div>
 	<img src="/res/cookie1.png" style="margin-top:1em; position:relative;" id="cookieImage" onclick="clickCookie()"/>
 	<div id="score" style="text-align:center; font-size:64px;"></div>
@@ -22,11 +23,12 @@
 		document.getElementById( "score" ).innerHTML = score.toString();
 		
 		var cookieImage = document.getElementById("cookieImage");
-		var interval = setInterval(cookieHover, 50);
+		var cookieImageInterval = setInterval(cookieHover, 50);
 		var i = 0.;
 		function cookieHover() {
-			cookieImage.style.top = (Math.sin(i)*5).toString()+"px";
-			i+=0.2;
+			cookieImage.style.top = (Math.sin(i/5)*5).toString()+"px";
+			i+=1;
+			if (i%1200==0) clickCookie();
 		}
 		
 		function clickCookie() {
