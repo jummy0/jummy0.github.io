@@ -11,7 +11,7 @@
 	<div class=info style="text-align:center; font-size:24px;">
 		Cookie Clicker
 	</div>
-	<img src="/res/cookie1.png" style="margin-top:1em;" onclick="clickCookie()"/>
+	<img src="/res/cookie1.png" style="margin-top:1em;" onclick="clickCookie()" id="cookie" />
 	<div id="score" style="text-align:center; font-size:64px;"></div>
 	<p style="margin:2em auto;"><button onclick="resetScore()" style="color:red; font-size:12pt; font-weight:bold;">Reset Progress</button></p>
 	<a href="/index.htm">Home</a>
@@ -20,6 +20,14 @@
 		var score = parseInt(getCookie("score"), 10);
 		if (isNaN(score)) score = 0;
 		document.getElementById( "score" ).innerHTML = score.toString();
+		
+		var cookie = document.getElementById("cookie");
+		var interval = setInterval(cookieHover, 50);
+		var i = 0.;
+		function cookieHover() {
+			cookie.style.top = (Math.sin(i)*5).toString()+"px";
+			i+=0.2;
+		}
 		
 		function clickCookie() {
 			if (isNaN(score)) {
