@@ -21,11 +21,11 @@
 		if (isNaN(score)) score = 0;
 		document.getElementById( "score" ).innerHTML = score.toString();
 		
-		var cookie = document.getElementById("cookie");
+		var cookieImage = document.getElementById("cookie");
 		var interval = setInterval(cookieHover, 50);
 		var i = 0.;
 		function cookieHover() {
-			cookie.style.top = (Math.sin(i)*5).toString()+"px";
+			cookieImage.style.top = (Math.sin(i)*5).toString()+"px";
 			i+=0.2;
 		}
 		
