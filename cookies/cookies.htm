@@ -13,8 +13,9 @@
 	</div>
 	<img src="/res/cookie1.png" style="margin-top:1em;" />
 	<div id="score" style="text-align:center; font-size:64px;"></div>
-	<p style="margin:3em auto;"><button onclick="resetScore()" style="color:red; font-size:12pt; font-weight:bold;">Reset Score</button></p>
+	<button onclick="resetScore()" style="color:red; font-size:12pt; font-weight:bold; margin:2em auto;">Reset Score</button>
 	<a href="/index.htm">Home</a>
+	
 	<script type="text/javascript">
 		var score = parseInt(getCookie("score"), 10);
 		if (isNaN(score)) {
