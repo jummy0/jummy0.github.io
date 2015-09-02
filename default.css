@@ -24,8 +24,11 @@ div.twocol {
 	/* include "float:left" or "float:right" inline, and "clear:both" at the start of a line */
 }
 
-div p.para {
+div p {
 	margin: auto;
+}
+
+div p.para {
 	text-indent: 5em;
 }
 
