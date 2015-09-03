@@ -42,7 +42,7 @@
 			i++;
 			progressAmount = 10000 - (2000000/i);
 			colorValue = ("00" + (Math.floor(2.55*Math.max((10000 - (2000000/i))/100,0))).toString(16)).substr(-2);
-			codePercent.innerHTML = "<span style='color:#" + "<span style='color:#ff" + colorValue + colorValue + ";'>" + (Math.floor(Math.max((10000 - (2000000/i))/100,0))).toString() + "%</span>";
+			codePercent.innerHTML = "<span style='color:#ff" + colorValue + colorValue + ";'>" + (Math.floor(Math.max((10000 - (2000000/i))/100,0))).toString() + "%</span>";
 			console.log(codePercent.innerHTML);
 			
 			progress.setAttribute("value",progressAmount.toString());
