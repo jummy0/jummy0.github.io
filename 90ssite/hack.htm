@@ -41,7 +41,7 @@
 			codes.innerHTML += newCode;
 			i++;
 			progressAmount = 10000 - (2000000/i);
-			codePercent.innerHTML = "<span style='color:#" + "00" + (2.55*Math.floor(Math.max((10000 - (2000000/i))/100,0))).toString(16).substr(-16) + "0000'>" + (Math.floor(Math.max((10000 - (2000000/i))/100,0))).toString() + "%</span>";
+			codePercent.innerHTML = "<span style='color:#" + "00" + (2.55*Math.floor(Math.max((10000 - (2000000/i))/100,0))).toString(16).substr(-2) + "0000'>" + (Math.floor(Math.max((10000 - (2000000/i))/100,0))).toString() + "%</span>";
 			
 			progress.setAttribute("value",progressAmount.toString());
 		}
