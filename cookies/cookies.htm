@@ -10,7 +10,7 @@
 	<br>
 	<div class=info style="text-align:center;">
 		<p style="font-size:24px">Cookie Clicker</p>
-		<p>For every click, and every 30 seconds you stay on this page, you get an extra cookie.</p>
+		<p>For every click, and every minute you stay on this page, you get an extra cookie.</p>
 		<p>Saving is automatic, provided that your browser has cookies enabled.</p>
 	</div>
 	<img src="/res/cookie1.png" style="margin-top:1em; position:relative;" id="cookieImage" onclick="clickCookie()"/>
@@ -29,7 +29,7 @@
 		function cookieHover() {
 			cookieImage.style.top = (Math.sin(i/5)*5).toString()+"px";
 			i+=1;
-			if (Math.floor(i)%600==0) clickCookie();
+			if (Math.floor(i)%1200==0) clickCookie();
 		}
 		
 		function clickCookie() {
