@@ -42,7 +42,7 @@
 			i++;
 			progressAmount = 10000 - (2000000/i);
 			colorValue = ("00" + (255-Math.floor(2.55*Math.max((10000 - (2000000/i))/100,0))).toString(16)).substr(-2);
-			codePercent.innerHTML = "<span style='font-family:Courier New, Courier, monospace; font-weight:bold; color:#ff" + colorValue + "00;'>" + (Math.floor(Math.max((10000 - (2000000/i))/100,0)*10000)/10000).toFixed(2).toString() + "%</span>";
+			codePercent.innerHTML = "<span style='font-family:Courier New, Courier, monospace; font-weight:bold; color:#ff" + colorValue + "00;'>" + (Math.floor(Math.max((10000 - (2000000/i))/100,0)*10000)/10000).toFixed(4).toString() + "%</span>";
 			
 			progress.setAttribute("value",progressAmount.toString());
 		}
