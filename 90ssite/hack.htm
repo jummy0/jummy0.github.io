@@ -19,7 +19,7 @@
 		<a href="hack2.htm">To continue the de encryotio, please click here</a><br>
 	</div>
 	<div class=info style="background:black;border-top-left-radius:0;border-top-right-radius:0">
-		<progress value="0" max="10000" id="prog" style="width:100%;"></progress> 
+		<progress value="0" max="10000" id="prog" style="width:80%;float:left;"></progress>codes: <div id="codePercent"></div>%
 		We are in the state in hack which the secret internet codes on the Internet. Here are just some of them:<br>
 		<span id=internetcodes style="font-family:Courier New, Courier, monospace; word-wrap:break-word; color:#0f0;">abcd1234</span>
 	</div>
@@ -27,6 +27,7 @@
 	<script type="text/javascript">
 		var codes = document.getElementById("internetcodes");
 		var progress = document.getElementById("prog");
+		var codePercent = document.getElementById("codePercent");
 		var interval = setInterval(hackCodes, 30);
 		var newCode;
 		var progressAmount, i = 0;
@@ -36,7 +37,8 @@
 			newCode = codesCharacters[Math.floor(Math.random()*codesCharacters.length)];
 			codes.innerHTML += newCode;
 			i++;
-			progressAmount = 10000 - (2000000/i);
+			progressAmount, codePercent.innerHTML = 10000 - (2000000/i);
+			
 			progress.setAttribute("value",progressAmount.toString());
 		}
 	</script>
