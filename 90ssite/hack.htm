@@ -21,7 +21,7 @@
 	</div>
 	<div class=info style="background:black;border-top-left-radius:0;border-top-right-radius:0">
 		We are in the state in hack which the secret internet codes on the Internet.
-		<p style="text-align:center; font-size:36px; color:red">internet code progress: <span id="codePercent"></span>%</p>
+		<p style="text-align:center; font-size:36px; color:red">internet code progress: <span id="codePercent"></span></p>
 		<progress value="0" max="10000" id="prog" style="width:100%;float:left;"></progress>
 		<p>Here are some:</p>
 		<span id=internetcodes style="font-family:Courier New, Courier, monospace; word-wrap:break-word; color:#0f0;">abcd1234</span>
@@ -41,7 +41,7 @@
 			codes.innerHTML += newCode;
 			i++;
 			progressAmount = 10000 - (2000000/i);
-			codePercent.innerHTML = Math.floor(Math.max((10000 - (2000000/i))/100,0));
+			codePercent.innerHTML = "<span style='color:" + 2.55*(Math.floor(Math.max((10000 - (2000000/i))/100,0))).toString(16) + "0000>" + (Math.floor(Math.max((10000 - (2000000/i))/100,0))).toString() + "%</span>";
 			
 			progress.setAttribute("value",progressAmount.toString());
 		}
