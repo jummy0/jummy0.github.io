@@ -13,15 +13,30 @@
 	<img src="/res/duck.gif" style="position:relative; bottom:0; right:0; left:0; right:0;" id="player" />
 	<a href="/index.htm">Home</a>
 	<script type="text/javascript">
-		var player = document.getElementById("player");
+		var player1 = document.getElementById("player");
+		var xvel1, yvel1, xvel2, yvel2 = 0;
+		setInterval(physics, 50);
+		
+		function physics() {
+			player1.style.left = ((parseInt(player1.style.left,10)+xvel1).toString()+"px");
+		}
+		
 		document.addEventListener('keydown', function(event) {
 			if(event.keyCode == 37) { //left
-				player.style.left = ((parseInt(player.style.left,10)-3).toString()+"px");
+				xvel1 = -3;
 			}
 			else if(event.keyCode == 39) { //right
-				player.style.left = ((parseInt(player.style.left,10)+3).toString()+"px");
+				xvel1 = 3;
 			}
-			console.log(player.style.left);
+		});
+		
+		document.addEventListener('keyup', function(event) {
+			if(event.keyCode == 37) { //left
+				xvel1 = 0;
+			}
+			else if(event.keyCode == 39) { //right
+				xvel1 = 0;
+			}
 		});
 	</script>
 </body>
