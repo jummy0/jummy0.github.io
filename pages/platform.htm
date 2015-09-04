@@ -22,7 +22,7 @@
 		
 		function process() {
 			player1.style.left = ((parseInt(player1.style.left,10)+xvel1).toString()+"px");
-			if (parseInt(player1.style.top,10) > 0) {
+			if (parseInt(player1.style.top,10) > initTop1) {
 				player1.style.top = ((parseInt(player1.style.bottom,10)+yvel1).toString()+"px");
 			}
 			else {
