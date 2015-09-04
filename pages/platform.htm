@@ -10,13 +10,14 @@
 	<div class=info style="text-align:center;">
 		<p style="font-size:24px">Under Construction...</p>
 	</div>
-	<img src="/res/duck.gif" style="position:relative; bottom:0; right:0; left:0; right:0;" id="player" />
+	<img src="/res/duck.gif" style="position:relative; bottom:0; right:0; left:0; top:0;" id="player" />
 	<a href="/index.htm">Home</a>
 	<script type="text/javascript">
 		var player1 = document.getElementById("player");
 		var xvel1, yvel1, xvel2, yvel2 = 0;
 		var left1, right1, left2, right2, up1, up2, down1, down2 = false;
 		setInterval(process, 50);
+		var initTop
 		
 		function process() {
 			player1.style.left = ((parseInt(player1.style.left,10)+xvel1).toString()+"px");
