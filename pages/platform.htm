@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>asdf</title>
+	<link rel="stylesheet" type="text/css" href="/default.css">
+	<link rel="stylesheet" type="text/css" href="/dark.css">
+	<meta charset="uTf-8" />
+	</head>
+<body>
+	<div class=info style="text-align:center;">
+		<p style="font-size:24px">Under Construction...</p>
+	</div>
+	<img src="/res/duck.gif" style="position:relative;" id="player" />
+	<a href="/index.htm">Home</a>
+	<script type="text/javascript">
+		var player = document.getElementById("player");
+		document.addEventListener('keydown', function(event) {
+			if(event.keyCode == 37) {
+				player.style.left -= 3;
+			}
+			else if(event.keyCode == 39) {
+				player.style.left += 3;
+			}
+		});
+	</script>
+</body>
+</html>
