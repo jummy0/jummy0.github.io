@@ -15,10 +15,10 @@
 	<script type="text/javascript">
 		var player = document.getElementById("player");
 		document.addEventListener('keydown', function(event) {
-			if(event.keyCode == 37) {
+			if(event.keyCode == 37) { //left
 				player.style.left = ((parseInt(player.style.left,10)-3)+"px").toString();
 			}
-			else if(event.keyCode == 39) {
+			else if(event.keyCode == 39) { //right
 				player.style.left = ((parseInt(player.style.left,10)+3)+"px").toString();
 			}
 		});
