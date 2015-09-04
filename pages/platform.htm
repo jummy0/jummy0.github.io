@@ -21,13 +21,13 @@
 		function process() {
 			player1.style.left = ((parseInt(player1.style.left,10)+xvel1).toString()+"px");
 			
-			if(left1) {
+			if(left1 && !right1) {
 				xvel1 = -3;
 				player1.style.webkitTransform = "scaleX(1)";
 				player1.style.transform = "scaleX(1)";
 				player1.style.msTransform = "scaleX(1)";
 			}
-			else if (right1) {
+			else if (right1 && !left1) {
 				xvel1 = 3;
 				player1.style.webkitTransform = "scaleX(-1)";
 				player1.style.transform = "scaleX(-1)";
