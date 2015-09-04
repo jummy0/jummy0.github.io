@@ -16,37 +16,43 @@
 		var player1 = document.getElementById("player");
 		var xvel1, yvel1, xvel2, yvel2 = 0;
 		var left1, right1, left2, right2 = false;
-		setInterval(physics, 50);
+		setInterval(process, 50);
 		
-		function physics() {
+		function process() {
 			player1.style.left = ((parseInt(player1.style.left,10)+xvel1).toString()+"px");
-		}
-		
-		document.addEventListener('keydown', function(event) {
-			if(event.keyCode == 37) { //left
-				left1 = true;
+			
+			if(left1) {
 				xvel1 = -3;
 				player1.style.webkitTransform = "scaleX(1)";
 				player1.style.transform = "scaleX(1)";
 				player1.style.msTransform = "scaleX(1)";
 			}
-			else if(event.keyCode == 39) { //right
-				right1 = true;
+			else if (right1) {
 				xvel1 = 3;
 				player1.style.webkitTransform = "scaleX(-1)";
 				player1.style.transform = "scaleX(-1)";
 				player1.style.msTransform = "scaleX(-1)";
+			}
+			else {
+				xvel1 = 0;
+			}
+		}
+		
+		document.addEventListener('keydown', function(event) {
+			if(event.keyCode == 37) { //left
+				left1 = true;
+			}
+			else if(event.keyCode == 39) { //right
+				right1 = true;
 			}
 		});
 		
 		document.addEventListener('keyup', function(event) {
 			if(event.keyCode == 37) { //left
 				left1 = false
-				if (!right1) xvel1 = 0;
 			}
 			else if(event.keyCode == 39) { //right
-				xvel1 = 0;
-				if (!left1) xvel1 = 0;
+				right1 = false;
 			}
 		});
 	</script>
