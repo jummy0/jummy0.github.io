@@ -21,12 +21,12 @@
 		function process() {
 			player1.style.left = ((parseInt(player1.style.left,10)+xvel1).toString()+"px");
 			if (player1.style.bottom > 0) {
-				player1.style.bottom = ((parseInt(player1.style.bottom,10)+yxel1).toString()+"px");
+				player1.style.bottom = ((parseInt(player1.style.bottom,10)+yvel1).toString()+"px");
 			}
 			else {
 				player1.style.bottom = "0px";
 			}
-			yvel -= 0.1;
+			yvel1 -= 0.1;
 			
 			if(left1 && !right1) {
 				xvel1 = -3;
