@@ -4,6 +4,7 @@
 
 em {
 	font-family: inherit;
+	font-style: italic;
 }
 
 div.info {
@@ -14,14 +15,22 @@ div.info {
 	box-sizing: border-box;
 }
 
-div.twocol {
-	padding: 15px;
-	border-radius: 10px;
-	box-sizing: border-box;
+div.one-half {
 	width: 48%;
-	margin: 1em auto;
+	margin: 1% auto;
 	text-align: center;
-	/* include "float:left" or "float:right" inline, and "clear:both" at the start of a line */
+}
+
+div.left {
+	float: left;
+}
+
+div.right {
+	float: right;
+}
+
+div.new-row {
+	clear: both;
 }
 
 div p {
@@ -34,27 +43,18 @@ div p.para {
 
 h1 {
 	font-size: 32px;
+	font-weight: bold;
 	text-align: center;
 }
 
 h2 {
-	font-size: 28px;
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
 }
 
 h3 {
-	font-size: 24px;
-}
-
-h4 {
-	font-size: 20px;
-}
-
-h5 {
-	font-size: 16px;
-}
-
-h6 {
-	font-size: 12px;
+	text-align: center;
 }
 
 body {
@@ -63,18 +63,10 @@ body {
 
 img {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-img.groovy {
-	border-style: groove;
-}
-
-
-table {
 	margin: 0 auto;
-	border-collapse: collapse;
-	border-spacing: 0;
+}
 
+img.icon {
+	height: 80px;
+	max-width: 80%;
 }
