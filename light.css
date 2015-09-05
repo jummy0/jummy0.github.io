@@ -2,23 +2,14 @@
 	color: black;
 }
 
-div.info, div.twocol {
+div.info {
 	background-color: #ffc;
 }
 
-h1.gold {
+h1 {
 	color: #874;
 }
 
 body {
 	background-color: #fff;
-}
-
-table.outline td {
-
-	border: 1px solid #874;
-}
-
-table.outline {
-	background-color: #ffc;
 }
