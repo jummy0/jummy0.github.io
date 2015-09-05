@@ -54,7 +54,17 @@ h2 {
 }
 
 h3 {
+	font-size: inherit;
 	text-align: center;
+	font-weight: bold;
+	margin: 0;
+}
+
+h4 {
+	font-size: inherit;
+	text-align: center;
+	font-weight: inherit;
+	margin: 0;
 }
 
 body {
