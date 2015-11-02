@@ -1,0 +1,22 @@
+html, body {
+	background-color: black;
+	color: white;
+	font-family: Comic Sans, Arial, sans-serif;
+}
+
+#gamebox{
+	width: 640px;
+	height: 480px;
+	margin: auto;
+}
+
+#heartbox{
+	width: 320px;
+	margin: auto;
+	padding: 4px;
+	background-color: white;
+}
+
+canvas{
+	background-color: black;
+}
