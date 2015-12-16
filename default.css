@@ -80,8 +80,10 @@ img.icon {
 	text-align: center;
 }
 
-.justify {
+.center-justify {
 	text-align: justify;
+	-moz-text-align-last: center;
+	text-align-last: center;
 }
 
 img.center {
