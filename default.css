@@ -77,6 +77,10 @@ img.icon {
 }
 
 .center {
+	text-align: center;
+}
+
+img.center {
 	display: table-cell;
 	text-align: center;
 }
