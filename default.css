@@ -80,6 +80,10 @@ img.icon {
 	text-align: center;
 }
 
+.justify {
+	text-align: justify;
+}
+
 img.center {
 	display: table-cell;
 	text-align: center;
