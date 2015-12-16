@@ -76,7 +76,7 @@ img.icon {
 	max-width: 80%;
 }
 
-img.center {
+.center {
 	display: table-cell;
 	text-align: center;
 }
