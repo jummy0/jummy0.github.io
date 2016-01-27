@@ -22,25 +22,31 @@
 			var screenX = window.screenX;
 			var screenY = window.screenY;
 			newWindow = window.open('','',"height=200,width=300");
-			newWindow2 = window.open('','',"height=200,width=300");
-			newWindow3 = window.open('','',"height=200,width=300");
-			newWindow4 = window.open('','',"height=150,width=600");
 			newWindow.document.write("<body style='background:black'><h1 style='color:yellow;font-family:Comic Sans MS, Comic Sans, sans-serif;font-weight:bold;font-size:110px;text-align:center'>ew.</h1></body>");
+			newWindow2 = window.open('','',"height=200,width=300");
 			newWindow2.document.write("<body style='background:black'><h1 style='color:#f0f;font-family:Comic Sans MS, Comic Sans, sans-serif;font-weight:bold;font-size:110px;text-align:center'>ew.</h1></body>");
+			newWindow3 = window.open('','',"height=200,width=300");
 			newWindow3.document.write("<body style='background:black'><h1 style='color:#0ff;font-family:Comic Sans MS, Comic Sans, sans-serif;font-weight:bold;font-size:110px;text-align:center'>ew.</h1></body>");
+			newWindow4 = window.open('','',"height=150,width=600");
 			newWindow4.document.write("<body style='background:black'><h1 style='color:#fff;font-family:Comic Sans MS, Comic Sans, sans-serif;font-weight:bold;font-size:56px;text-align:center'>I'm a distraction!</h1></body>");
+			newWindow5 = window.open('','',"height=100,width=700");
+			newWindow5.document.write("<body style='background:black'><h1 style='color:#fff;font-family:Comic Sans MS, Comic Sans, sans-serif;font-weight:bold;font-size:46px;text-align:center'>have you ever tasted sand</h1></body>");
+			
 			var shake = setInterval(screenShake, 15);
 		}
 		
 		function screenShake(){
 			newWindow.moveBy(Math.random()*150-75,Math.random()*150-75);
-			newWindow2.moveBy(Math.random()*150-75,Math.random()*150-75);
-			newWindow3.moveBy(Math.random()*150-75,Math.random()*150-75);
-			newWindow4.moveBy(Math.random()*150-75,Math.random()*150-75);
 			newWindow.focus();
+			newWindow2.moveBy(Math.random()*150-75,Math.random()*150-75);
 			newWindow2.focus();
+			newWindow3.moveBy(Math.random()*150-75,Math.random()*150-75);
 			newWindow3.focus();
+			newWindow4.moveBy(Math.random()*150-75,Math.random()*150-75);
 			newWindow4.focus();
+			newWindow5.moveBy(Math.random()*150-75,Math.random()*150-75);
+			newWindow5.focus();
+
 		}
 	</script>
 </body>	
