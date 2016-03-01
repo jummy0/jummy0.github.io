@@ -80,6 +80,12 @@ img.icon {
 	text-align: center;
 }
 
+.link-list{
+	width: 80%;
+	margin: 0 auto;
+}
+}
+
 .center-justify {
 	text-align: justify;
 	-moz-text-align-last: center;
