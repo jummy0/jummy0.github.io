@@ -15,5 +15,14 @@ table {
 }
 
 td:first-child {
+  text-align: center;
+}
+
+td:nth-child(n + 5) {
+  text-align: center;
+}
+
+td:nth-child(-n + 4) {
+  font-size: 125%;
   font-weight: bold;
 }
