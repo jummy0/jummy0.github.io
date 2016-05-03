@@ -9,7 +9,7 @@ th, td {
   padding: 5px;
 }
 
-th:first-child {
+tr:first-child th:first-child {
   font-size: 200%;
 }
 
