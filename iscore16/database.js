@@ -16,7 +16,7 @@ request.onload = function() {
 		}
 		placementTableContent += '</tr>';
 	}
-	document.getElementById('placement-table').innerHTML = placementTableContent;
+	document.getElementById('placement-data').innerHTML = placementTableContent;
 };
 request.open( 'GET', 'database.dat', true );
 request.send();
