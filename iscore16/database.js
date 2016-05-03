@@ -11,7 +11,13 @@ request.onload = function() {
 	for (i = 0; i < data.length; i++) {
 		placementTableContent += '<tr>';
 		for (j = 0; j < data[i].length; j++) {
-			placementTableContent += '<td>' + data[i][j] + '</td>';
+			if (j == 1) {
+				placementTableContent += '<td><img src="logo/' + data[i][j] + '"></td>';
+			} else if (j == 2) {
+				placementTableContent += '<td>Team ' + data[i][j] + '</td>';
+			} else {
+				placementTableContent += '<td>' + data[i][j] + '</td>';
+			}
 		}
 		placementTableContent += '</tr>';
 	}
