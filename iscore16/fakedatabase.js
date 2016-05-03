@@ -7,7 +7,7 @@ request.onload = function() {
 		data[i] = fileContentRows.split('/').trim();
 	}
 };
-request.open( 'GET', 'fake.database', true );
+request.open( 'GET', 'database.dat', true );
 request.send();
 var placementTableContent = '';
 for (i = 0; i < data.length; i++) {
