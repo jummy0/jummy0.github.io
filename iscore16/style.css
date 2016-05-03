@@ -1,7 +1,7 @@
 body {
   background-color: #444;
   color: #ddd;
-  font: 10pt Arial, sans-serif;
+  font: Arial, sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -12,7 +12,7 @@ th, td {
 }
 
 tr {
-  height: 60px;
+  height: 80px;
 }
 
 tr:first-child th:first-child {
@@ -21,7 +21,7 @@ tr:first-child th:first-child {
 
 div.scrolling-table-cell {
   overflow: scroll;
-  height: 60px;
+  height: 80px;
   font-size: 80%;
   margin: 0;
   padding: 5px;
@@ -41,8 +41,8 @@ table {
 }
 
 table img {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   display: block;
 }
 
@@ -61,7 +61,7 @@ td:nth-child(-n + 5) {
 
 td:nth-child(2) {
   padding: 0;
-  width: 60px;
+  width: 80px;
 }
 
 tbody tr:first-child td:nth-child(4) {
