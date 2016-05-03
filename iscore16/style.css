@@ -6,7 +6,11 @@ body {
 
 th, td {
   border: 1px solid white;
-  padding: 15px;
+  padding: 5px;
+}
+
+th:first-child {
+  font-size: 200%;
 }
 
 table {
