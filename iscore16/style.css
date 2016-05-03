@@ -36,6 +36,7 @@ table {
   border-collapse: collapse;
   width: 100%;
   background-color: #fff;
+  margin: 5px;
 }
 
 table img {
