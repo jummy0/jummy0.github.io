@@ -22,7 +22,7 @@ tr:first-child th:first-child {
 div.scrolling-table-cell {
   overflow: scroll;
   height: 60px;
-  font-size: 75%;
+  font-size: 80%;
   margin: 0;
   padding: 5px;
   box-sizing: border-box;
