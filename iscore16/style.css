@@ -23,6 +23,8 @@ div.scrolling-table-cell {
   overflow: scroll;
   height: 60px;
   font-size: 85%;
+  margin: 0;
+  padding: 0;
 }
 
 thead {
