@@ -3,7 +3,6 @@ var data = [];
 var fileContent = '';
 request.onload = function() {
 	fileContent = this.responseText;
-	console.log(fileContent);
 	var fileContentRows = fileContent.split('\n').map(Function.prototype.call, String.prototype.trim);
 	for (i = 0; i < fileContentRows.length; i++) {
 		data[i] = fileContentRows[i].split('/').map(Function.prototype.call, String.prototype.trim);
