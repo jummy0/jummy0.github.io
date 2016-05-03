@@ -1,16 +1,20 @@
 body {
-  background-color: #555;
+  background-color: #444;
   color: #ddd;
   font-family: Verdana, Geneva, Arial, sans-serif;
 }
 
 th, td {
-  border: 1px solid white;
+  border: 1px solid #888;
   padding: 5px;
 }
 
 tr:first-child th:first-child {
   font-size: 200%;
+}
+
+thead {
+  background-color: #bbb;
 }
 
 table {
@@ -29,4 +33,9 @@ td:nth-child(n + 5) {
 td:nth-child(-n + 5) {
   font-size: 150%;
   font-weight: bold;
+}
+
+section {
+  background-color: #ddd;
+  color: #000;
 }
