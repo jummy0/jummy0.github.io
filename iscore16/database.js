@@ -4,19 +4,19 @@ var fileContent = '';
 request.onload = function() {
 	fileContent = this.responseText;
 	console.log(fileContent);
+	var fileContentRows = fileContent.split('\n').map(Function.prototype.call, String.prototype.trim);
+	for (i = 0; i < fileContentRows.length; i++) {
+		data[i] = fileContentRows[i].split('/').map(Function.prototype.call, String.prototype.trim);
+	}
+	var placementTableContent = '';
+	for (i = 0; i < data.length; i++) {
+		placementTableContent += '<tr>';
+		for (j = 0; j < data[i].length; j++) {
+			placementTableContent += '<td>' + data[i][j] + '</td>';
+		}
+		placementTableContent += '</tr>';
+	}
+	document.getElementById('placement-table').innerHTML = placementTableContent;
 };
 request.open( 'GET', 'database.dat', true );
 request.send();
-var fileContentRows = fileContent.split('\n').map(Function.prototype.call, String.prototype.trim);
-for (i = 0; i < fileContentRows.length; i++) {
-	data[i] = fileContentRows[i].split('/').map(Function.prototype.call, String.prototype.trim);
-}
-var placementTableContent = '';
-for (i = 0; i < data.length; i++) {
-	placementTableContent += '<tr>';
-	for (j = 0; j < data[i].length; j++) {
-		placementTableContent += '<td>' + data[i][j] + '</td>';
-	}
-	placementTableContent += '</tr>';
-}
-document.getElementById('placement-table').innerHTML = placementTableContent;
