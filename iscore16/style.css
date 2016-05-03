@@ -73,10 +73,12 @@ section {
   color: #000;
   width: 85%;
   float: right;
+  box-sizing: border-box;
 }
 
 aside {
   width: 15%;
   float: left;
   padding: 5px;
+  box-sizing: border-box;
 }
