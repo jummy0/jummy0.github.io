@@ -39,6 +39,10 @@ td:nth-child(-n + 5) {
   font-weight: bold;
 }
 
+h2 {
+  font-weight: normal;
+}
+
 section {
   background-color: #ddd;
   color: #000;
