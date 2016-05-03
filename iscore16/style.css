@@ -36,7 +36,7 @@ table {
   border-collapse: collapse;
   width: 100%;
   background-color: #fff;
-  margin: 5px;
+  box-sizing: border-box;
 }
 
 table img {
@@ -64,7 +64,6 @@ td:nth-child(2) {
 }
 
 h2 {
-  margin-left: 10px;
   font-weight: normal;
 }
 
@@ -76,6 +75,7 @@ section {
   box-sizing: border-box;
   margin-top: 20px;
   border-radius: 5px 0 0 0;
+  padding: 10px;
 }
 
 aside {
