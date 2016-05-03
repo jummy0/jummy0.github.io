@@ -22,7 +22,7 @@ tr:first-child th:first-child {
 div.scrolling-table-cell {
   overflow: scroll;
   height: 60px;
-  font-size: 80%;
+  font-size: 85%;
 }
 
 thead {
