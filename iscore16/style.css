@@ -40,4 +40,6 @@ td:nth-child(-n + 5) {
 section {
   background-color: #ddd;
   color: #000;
+  width: 85%;
+  float: right;
 }
