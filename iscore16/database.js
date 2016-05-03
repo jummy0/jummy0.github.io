@@ -4,7 +4,7 @@ request.onload = function() {
 	var fileContent = this.responseText;
 	var fileContentRows = fileContent.split('\n').map(Function.prototype.call, String.prototype.trim);
 	for (i = 0; i < fileContentRows.length; i++) {
-		data[i] = fileContentRows.split('/').map(Function.prototype.call, String.prototype.trim);
+		data[i] = fileContentRows[i].split('/').map(Function.prototype.call, String.prototype.trim);
 	}
 };
 request.open( 'GET', 'database.dat', true );
