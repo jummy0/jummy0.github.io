@@ -9,3 +9,7 @@ th, td {
   border-collapse: collapse;
   padding: 15px;
 }
+
+td:first-child {
+  font-weight: bold;
+}
