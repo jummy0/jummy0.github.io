@@ -74,6 +74,8 @@ section {
   width: 85%;
   float: right;
   box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 5px 0 0 5px;
 }
 
 aside {
