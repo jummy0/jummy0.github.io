@@ -29,7 +29,6 @@ div.scrolling-table-cell {
 }
 
 thead {
-  background-color: #ddd;
   color: #555;
 }
 
@@ -70,6 +69,7 @@ tbody tr:first-child td:nth-child(4) {
 
 h1, h2 {
   font-weight: normal;
+  color: #555;
 }
 
 section {
