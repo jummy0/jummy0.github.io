@@ -14,7 +14,7 @@ request.onload = function() {
 			if (j == 1) {
 				placementTableContent += '<td><img src="logo/' + data[i][j] + '"></td>';
 			} else if (j == 2) {
-				placementTableContent += '<td>Team ' + data[i][j] + '</td>';
+				placementTableContent += '<td>Team&nbsp;' + data[i][j] + '</td>';
 			} else if (j == 3 && i == 0) {
 				placementTableContent += '<td><div class="scrolling-table-cell">' + data[i][j] + '</div></td>';
 			} else {
