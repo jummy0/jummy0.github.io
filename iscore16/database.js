@@ -16,7 +16,7 @@ request.onload = function() {
 			} else if (j == 2) {
 				placementTableContent += '<td>Team ' + data[i][j] + '</td>';
 			} else if (j == 3 && i == 0) {
-				placementTableContent += '<td><div style="overflow:scroll;width:100%">' + data[i][j] + '</div></td>';
+				placementTableContent += '<td><div class="scrolling-table-cell">' + data[i][j] + '</div></td>';
 			} else {
 				placementTableContent += '<td>' + data[i][j] + '</td>';
 			}
