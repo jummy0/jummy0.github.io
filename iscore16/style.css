@@ -6,8 +6,11 @@ body {
 
 th, td {
   border: 1px solid white;
-  border-collapse: collapse;
   padding: 15px;
+}
+
+table {
+  border-collapse: collapse;
 }
 
 td:first-child {
