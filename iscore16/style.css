@@ -29,6 +29,7 @@ table {
 table img {
   max-width: 80px;
   max-height: 80px;
+  margin: auto;
 }
 
 td:first-child {
