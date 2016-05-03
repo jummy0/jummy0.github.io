@@ -45,3 +45,9 @@ section {
   width: 85%;
   float: right;
 }
+
+aside {
+  width: 15%;
+  float: left;
+}
+}
