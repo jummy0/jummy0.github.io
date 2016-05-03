@@ -33,7 +33,7 @@ table {
 table img {
   max-width: 50px;
   max-height: 50px;
-  margin: auto;
+  vertical-align: middle;
 }
 
 td:first-child {
