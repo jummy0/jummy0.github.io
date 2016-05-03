@@ -26,7 +26,7 @@ td:nth-child(n + 5) {
   text-align: center;
 }
 
-td:nth-child(-n + 4) {
+td:nth-child(-n + 5) {
   font-size: 150%;
   font-weight: bold;
 }
