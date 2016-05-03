@@ -26,6 +26,11 @@ table {
   background-color: #fff;
 }
 
+table img {
+  max-width: 80px;
+  max-height: 80px;
+}
+
 td:first-child {
   text-align: center;
 }
