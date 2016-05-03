@@ -2,9 +2,9 @@ var request = new XMLHttpRequest();
 var data = [];
 request.onload = function() {
 	var fileContent = this.responseText;
-	var fileContentRows = fileContent.split( '\n' ).trim;
+	var fileContentRows = fileContent.split('\n').map(Function.prototype.call, String.prototype.trim);
 	for (i = 0; i < fileContentRows.length; i++) {
-		data[i] = fileContentRows.split('/').trim;
+		data[i] = fileContentRows.split('/').map(Function.prototype.call, String.prototype.trim);
 	}
 };
 request.open( 'GET', 'database.dat', true );
