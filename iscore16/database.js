@@ -1,6 +1,6 @@
-var request = new XMLHttpRequest();
-var fileContent = '';
 function readDatabase(location) {
+	var request = new XMLHttpRequest();
+	var fileContent = '';
 	var data = [];
 	request.onload = function() {
 		fileContent = this.responseText;
