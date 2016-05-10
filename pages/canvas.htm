@@ -80,11 +80,11 @@
 			ctx.fillRect(win.xPos, win.yPos, win.width, win.height);
 			
 			// Title bar
-			var titleBarGradient = ctx.createLinearGradient(fWin.xPos+titlePadding, 0, fWin.xPos+fWin.width-titlePadding*2, 0);
+			var titleBarGradient = ctx.createLinearGradient(win.xPos+titlePadding, 0, win.xPos + win.width - titlePadding * 2, 0);
 			titleBarGradient.addColorStop(0, "#008");
 			titleBarGradient.addColorStop(1, "#09D");
 			ctx.fillStyle = titleBarGradient;
-			ctx.fillRect(fWin.xPos+titlePadding, fWin.yPos+titlePadding, fWin.width-titlePadding*2, titleHeight);
+			ctx.fillRect(win.xPos + titlePadding, win.yPos + titlePadding, win.width - titlePadding * 2, titleHeight);
 			
 			// Window icon
 			var windowIcon = new Image();
