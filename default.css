@@ -84,7 +84,6 @@ img.icon {
 	width: 80%;
 	margin: 0 auto;
 }
-}
 
 .center-justify {
 	text-align: justify;
@@ -93,6 +92,6 @@ img.icon {
 }
 
 img.center {
-	display: table-cell;
-	text-align: center;
+	display: block;
+	margin: 0 auto;
 }
