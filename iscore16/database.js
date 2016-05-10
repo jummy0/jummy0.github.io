@@ -7,7 +7,6 @@ function readDatabase(location, callback) {
 		var fileContentRows = fileContent.split('\n').map(Function.prototype.call, String.prototype.trim);
 		for (i = 0; i < fileContentRows.length; i++) {
 			data[i] = fileContentRows[i].split('/').map(Function.prototype.call, String.prototype.trim);
-			console.log(fileContentRows[i].split('/').map(Function.prototype.call, String.prototype.trim));
 		}
 	};
 	request.open( 'GET', location, true );
