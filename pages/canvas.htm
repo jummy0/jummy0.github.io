@@ -82,6 +82,10 @@
 		}
 		
 		function drawWindow(win) {
+			// Window
+			ctx.fillStyle = "#CCC";
+			ctx.fillRect(win.xPos, win.yPos, win.width, win.height);
+			
 			// Window icon
 			var windowIcon = new Image();
 			windowIcon.onload = function() {
@@ -99,10 +103,6 @@
 			ctx.font = "bold " + titleHeight/2 +"px Verdana";
 			ctx.fillText(win.title, win.xPos + titlePadding + titleHeight + 3, win.yPos + titlePadding + titleHeight / 4);
 			ctx.fillText("×", win.xPos + win.width - titleHeight / 2 - titlePadding - 2, win.yPos + titlePadding + titleHeight / 4);
-			
-			// Window
-			ctx.fillStyle = "#CCC";
-			ctx.fillRect(win.xPos, win.yPos, win.width, win.height);
 		}
 		
 		can.onmousedown = function() {
