@@ -82,34 +82,36 @@
 			swood.src = "/res/swood.png";
 		}
 		
-		function drawWindow(win) {
-			// Window
-			ctx.fillStyle = "#AAA";
-			ctx.fillRect(win.xPos, win.yPos, win.width, win.height);
-			ctx.fillStyle = "#EEE";
-			ctx.fillRect(win.xPos, win.yPos, win.width - 3, win.height - 3);
-			ctx.fillStyle = "#CCC";
-			ctx.fillRect(win.xPos + 3, win.yPos + 3, win.width - 6, win.height - 6);
-			
-			// Title bar
-			var titleBarGradient = ctx.createLinearGradient(win.xPos+titlePadding, 0, win.xPos + win.width - titlePadding * 2 + 1, 0);
-			titleBarGradient.addColorStop(0, "#008");
-			titleBarGradient.addColorStop(1, "#09D");
-			ctx.fillStyle = titleBarGradient;
-			ctx.fillRect(win.xPos + titlePadding, win.yPos + titlePadding, win.width - titlePadding * 2 + 1, titleHeight);
-			
-			// Window icon
-			var windowIcon = new Image();
-			windowIcon.onload = function() {
-				ctx.drawImage(windowIcon, win.xPos + titlePadding + 2, win.yPos + titlePadding + 1, titleHeight - 2, titleHeight - 2);
-			};
-			windowIcon.src = win.icon;
-			
-			// Window Title and such
-			ctx.fillStyle = "#fff";
-			ctx.font = "bold " + titleHeight/2 +"px Verdana";
-			ctx.fillText(win.title, win.xPos + titlePadding + titleHeight + 3, win.yPos + titlePadding + titleHeight / 4);
-			ctx.fillText("×", win.xPos + win.width - titleHeight / 2 - titlePadding - 2, win.yPos + titlePadding + titleHeight / 4);
+		function drawWindow() {
+			for (var i=0; i<arguments.length; i++) {
+				// Window
+				ctx.fillStyle = "#AAA";
+				ctx.fillRect(arguments[i].xPos, arguments[i].yPos, arguments[i].width, arguments[i].height);
+				ctx.fillStyle = "#EEE";
+				ctx.fillRect(arguments[i].xPos, arguments[i].yPos, arguments[i].width - 3, arguments[i].height - 3);
+				ctx.fillStyle = "#CCC";
+				ctx.fillRect(arguments[i].xPos + 3, arguments[i].yPos + 3, arguments[i].width - 6, arguments[i].height - 6);
+				
+				// Title bar
+				var titleBarGradient = ctx.createLinearGradient(arguments[i].xPos + titlePadding, 0, arguments[i].xPos + arguments[i].width - titlePadding * 2 + 1, 0);
+				titleBarGradient.addColorStop(0, "#008");
+				titleBarGradient.addColorStop(1, "#09D");
+				ctx.fillStyle = titleBarGradient;
+				ctx.fillRect(arguments[i].xPos + titlePadding, arguments[i].yPos + titlePadding, arguments[i].width - titlePadding * 2 + 1, titleHeight);
+				
+				// Window icon
+				var windowIcon = new Image();
+				windowIcon.onload = function() {
+					ctx.drawImage(windowIcon, arguments[i].xPos + titlePadding + 2, arguments[i].yPos + titlePadding + 1, titleHeight - 2, titleHeight - 2);
+				};
+				windowIcon.src = arguments[i].icon;
+				
+				// Window Title and such
+				ctx.fillStyle = "#fff";
+				ctx.font = "bold " + titleHeight/2 +"px Verdana";
+				ctx.fillText(arguments[i].title, arguments[i].xPos + titlePadding + titleHeight + 3, arguments[i].yPos + titlePadding + titleHeight / 4);
+				ctx.fillText("×", arguments[i].xPos + arguments[i].width - titleHeight / 2 - titlePadding - 2, arguments[i].yPos + titlePadding + titleHeight / 4);
+			}
 		}
 		
 		/*
