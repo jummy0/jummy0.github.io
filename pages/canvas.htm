@@ -76,6 +76,10 @@
 		
 		function drawWindow(win) {
 			// Window
+			ctx.fillStyle = "#EEE";
+			ctx.fillRect(win.xPos - 3, win.yPos - 3, win.width, win.height);
+			ctx.fillStyle = "#AAA";
+			ctx.fillRect(win.xPos + 3, win.yPos + 3, win.width, win.height);
 			ctx.fillStyle = "#CCC";
 			ctx.fillRect(win.xPos, win.yPos, win.width, win.height);
 			
