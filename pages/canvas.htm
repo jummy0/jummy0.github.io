@@ -89,7 +89,8 @@
 				// Title bar
 				var titleBarGradient = ctx.createLinearGradient(arguments[i].xPos + titlePadding, 0, arguments[i].xPos + arguments[i].width - titlePadding * 2 + 1, 0);
 				if (i < arguments.length - 1) {
-					
+					titleBarGradient.addColorStop(0, "#444");
+					titleBarGradient.addColorStop(1, "#888");
 				} else {
 					titleBarGradient.addColorStop(0, "#008");
 					titleBarGradient.addColorStop(1, "#09D");
