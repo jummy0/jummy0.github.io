@@ -80,8 +80,13 @@
 			};
 			fakeIcons.src = "/res/icons.png";
 			
-			drawWindow(windowSwood);
 			drawWindow(windowBack)
+			drawWindow(windowSwood);
+			var swood = new Image();
+			swood.onload = function() {
+				ctx.drawImage(swood, fWin.xPos + titlePadding + 4, fWin.yPos + titleHeight + titlePadding + 4, 208, 84);
+			};
+			swood.src = "/res/swood.png";
 		}
 		
 		function drawWindow(win) {
@@ -106,11 +111,6 @@
 				ctx.drawImage(windowIcon, win.xPos + titlePadding + 2, win.yPos + titlePadding + 1, titleHeight - 2, titleHeight - 2);
 			};
 			windowIcon.src = win.icon;
-			var swood = new Image();
-			swood.onload = function() {
-				ctx.drawImage(swood, win.xPos + titlePadding + 4, win.yPos + titleHeight + titlePadding + 4, 208, 84);
-			};
-			swood.src = "/res/swood.png";
 			
 			// Window Title and such
 			ctx.fillStyle = "#fff";
