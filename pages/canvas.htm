@@ -88,8 +88,12 @@
 				
 				// Title bar
 				var titleBarGradient = ctx.createLinearGradient(arguments[i].xPos + titlePadding, 0, arguments[i].xPos + arguments[i].width - titlePadding * 2 + 1, 0);
-				titleBarGradient.addColorStop(0, "#008");
-				titleBarGradient.addColorStop(1, "#09D");
+				if (i < arguments.length - 1) {
+					
+				} else {
+					titleBarGradient.addColorStop(0, "#008");
+					titleBarGradient.addColorStop(1, "#09D");
+				}
 				ctx.fillStyle = titleBarGradient;
 				ctx.fillRect(arguments[i].xPos + titlePadding, arguments[i].yPos + titlePadding, arguments[i].width - titlePadding * 2 + 1, titleHeight);
 				
