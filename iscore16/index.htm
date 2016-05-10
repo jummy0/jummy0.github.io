@@ -30,7 +30,7 @@
 		<script src="database.js"></script>
 		<script>
 			readDatabase('database.dat', processDatabase);
-			function processDatabase(data) {
+			function processDatabase(teamData) {
 				var placementTableContent = '';
 				for (i = 0; i < teamData.length; i++) {
 					placementTableContent += '<tr>';
