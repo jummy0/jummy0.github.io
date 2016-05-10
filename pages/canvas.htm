@@ -71,10 +71,6 @@
 			};
 			fakeIcons.src = "/res/icons.png";
 			
-			// Window
-			ctx.fillStyle = "#CCC";
-			ctx.fillRect(fWin.xPos, fWin.yPos, fWin.width, fWin.height);
-			
 			// Title bar
 			var titleBarGradient = ctx.createLinearGradient(fWin.xPos+titlePadding, 0, fWin.xPos+fWin.width-titlePadding*2, 0);
 			titleBarGradient.addColorStop(0, "#008");
@@ -82,26 +78,34 @@
 			ctx.fillStyle = titleBarGradient;
 			ctx.fillRect(fWin.xPos+titlePadding, fWin.yPos+titlePadding, fWin.width-titlePadding*2, titleHeight);
 			
+			drawWindow(fWin);
+		}
+		
+		function drawWindow(win) {
 			// Window icon
 			var windowIcon = new Image();
 			windowIcon.onload = function() {
-				ctx.drawImage(windowIcon, fWin.xPos+titlePadding+2, fWin.yPos+titlePadding+1, titleHeight-2, titleHeight-2);
+				ctx.drawImage(windowIcon, win.xPos + titlePadding + 2, win.yPos + titlePadding + 1, titleHeight - 2, titleHeight - 2);
 			};
-			windowIcon.src = fWin.icon;
+			windowIcon.src = win.icon;
 			var swood = new Image();
 			swood.onload = function() {
-				ctx.drawImage(swood, fWin.xPos+titlePadding+4, fWin.yPos+titleHeight+titlePadding+4, 208, 84);
+				ctx.drawImage(swood, win.xPos + titlePadding + 4, win.yPos + titleHeight + titlePadding + 4, 208, 84);
 			};
 			swood.src = "/res/swood.png";
 			
 			// Window Title and such
 			ctx.fillStyle = "#fff";
 			ctx.font = "bold " + titleHeight/2 +"px Verdana";
-			ctx.fillText(fWin.title, fWin.xPos+titlePadding+titleHeight+3, fWin.yPos+titlePadding+titleHeight/4);
-			ctx.fillText("×", fWin.xPos+fWin.width-titleHeight/2-titlePadding-2, fWin.yPos+titlePadding+titleHeight/4);
+			ctx.fillText(win.title, win.xPos + titlePadding + titleHeight + 3, win.yPos + titlePadding + titleHeight / 4);
+			ctx.fillText("×", win.xPos + win.width - titleHeight / 2 - titlePadding - 2, win.yPos + titlePadding + titleHeight / 4);
+			
+			// Window
+			ctx.fillStyle = "#CCC";
+			ctx.fillRect(win.xPos, win.yPos, win.width, win.height);
 		}
 		
-		can.onmousedown = function(){
+		can.onmousedown = function() {
 			fWin.xPos = mouseX - fWin.width/2;
 			fWin.yPos = mouseY - titleHeight/2 - titlePadding;
 			redraw();
