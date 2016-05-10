@@ -1,4 +1,4 @@
-function readDatabase(location) {
+function readDatabase(location, callback) {
 	var request = new XMLHttpRequest();
 	var fileContent = '';
 	var data = [];
@@ -12,5 +12,5 @@ function readDatabase(location) {
 	};
 	request.open( 'GET', location, true );
 	request.send();
-	return data;
+	callback(data);
 }
