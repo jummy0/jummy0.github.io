@@ -91,7 +91,7 @@ img.icon {
 	text-align-last: center;
 }
 
-img.center, #croutainer {
+img.center, .block-center {
 	display: block;
 	margin: 0 auto;
 }
