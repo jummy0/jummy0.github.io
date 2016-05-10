@@ -29,24 +29,26 @@
 		</section>
 		<script src="database.js"></script>
 		<script>
-			var teamData = readDatabase('database.dat');
-			var placementTableContent = '';
-			for (i = 0; i < teamData.length; i++) {
-				placementTableContent += '<tr>';
-				for (j = 0; j < teamData[i].length; j++) {
-					if (j == 1) {
-						placementTableContent += '<td><img src="logo/' + teamData[i][j] + '"></td>';
-					} else if (j == 2) {
-						placementTableContent += '<td>Team&nbsp;' + teamData[i][j] + '</td>';
-					} else if (j == 3 && i == 0) {
-						placementTableContent += '<td><div class="scrolling-table-cell">' + teamData[i][j] + '</div></td>';
-					} else {
-						placementTableContent += '<td>' + teamData[i][j] + '</td>';
+			readDatabase('database.dat', processDatabase);
+			function processDatabase(data) {
+				var placementTableContent = '';
+				for (i = 0; i < teamData.length; i++) {
+					placementTableContent += '<tr>';
+					for (j = 0; j < teamData[i].length; j++) {
+						if (j == 1) {
+							placementTableContent += '<td><img src="logo/' + teamData[i][j] + '"></td>';
+						} else if (j == 2) {
+							placementTableContent += '<td>Team&nbsp;' + teamData[i][j] + '</td>';
+						} else if (j == 3 && i == 0) {
+							placementTableContent += '<td><div class="scrolling-table-cell">' + teamData[i][j] + '</div></td>';
+						} else {
+							placementTableContent += '<td>' + teamData[i][j] + '</td>';
+						}
 					}
+					placementTableContent += '</tr>';
 				}
-				placementTableContent += '</tr>';
+				document.getElementById('placement-data').innerHTML = placementTableContent;
 			}
-			document.getElementById('placement-data').innerHTML = placementTableContent;
 		</script>
 	</body>
 </html>
