@@ -27,7 +27,7 @@
 		var mouseY = 0;
 		var DOMURL = window.URL || window.webkitURL || window;
 		
-		var titlePadding = 4; //4
+		var padding = 4; //4
 		var titleHeight = 32; //18
 		
 		var windowSwood = {
@@ -90,7 +90,7 @@
 				ctx.fillRect(arguments[i].xPos + 3, arguments[i].yPos + 3, arguments[i].width - 6, arguments[i].height - 6);
 				
 				// Title bar
-				var titleBarGradient = ctx.createLinearGradient(arguments[i].xPos + titlePadding, 0, arguments[i].xPos + arguments[i].width - titlePadding * 2 + 1, 0);
+				var titleBarGradient = ctx.createLinearGradient(arguments[i].xPos + padding, 0, arguments[i].xPos + arguments[i].width - padding * 2 + 1, 0);
 				if (i < arguments.length - 1) {
 					titleBarGradient.addColorStop(0, "#888");
 					titleBarGradient.addColorStop(1, "#BBB");
@@ -99,20 +99,20 @@
 					titleBarGradient.addColorStop(1, "#09D");
 				}
 				ctx.fillStyle = titleBarGradient;
-				ctx.fillRect(arguments[i].xPos + titlePadding, arguments[i].yPos + titlePadding, arguments[i].width - titlePadding * 2 + 1, titleHeight);
+				ctx.fillRect(arguments[i].xPos + padding, arguments[i].yPos + padding, arguments[i].width - padding * 2 + 1, titleHeight);
 				
 				// Window icon
 				var windowIcon = new Image();
 				windowIcon.onload = function() {
-					ctx.drawImage(windowIcon, arguments[i].xPos + titlePadding + 2, arguments[i].yPos + titlePadding + 1, titleHeight - 2, titleHeight - 2);
+					ctx.drawImage(windowIcon, arguments[i].xPos + padding + 2, arguments[i].yPos + padding + 1, titleHeight - 2, titleHeight - 2);
 				};
 				windowIcon.src = arguments[i].icon;
 				
 				// Window Title and such
 				ctx.fillStyle = "#fff";
 				ctx.font = "bold " + titleHeight/2 +"px Verdana";
-				ctx.fillText(arguments[i].title, arguments[i].xPos + titlePadding + titleHeight + 3, arguments[i].yPos + titlePadding + titleHeight / 4);
-				ctx.fillText("×", arguments[i].xPos + arguments[i].width - titleHeight / 2 - titlePadding - 2, arguments[i].yPos + titlePadding + titleHeight / 4);
+				ctx.fillText(arguments[i].title, arguments[i].xPos + padding + titleHeight + 3, arguments[i].yPos + padding + titleHeight / 4);
+				ctx.fillText("×", arguments[i].xPos + arguments[i].width - titleHeight / 2 - padding - 2, arguments[i].yPos + padding + titleHeight / 4);
 				
 				// Window content
 				var winContentImg = new Image();
@@ -120,7 +120,7 @@
 				var winContentUrl = DOMURL.createObjectURL(winContentSvg);
 				
 				winContentImg.onload = function () {
-					ctx.drawImage(winContentImg, 0, 0);
+					ctx.drawImage(winContentImg, arguments[i].xPos + padding, arguments[i].yPos + titleHeight + padding * 3);
 					DOMURL.revokeObjectURL(winContentUrl);
 				};
 				winContentImg.src = winContentUrl;
@@ -129,8 +129,8 @@
 		
 		/*
 		can.onmousedown = function() {
-			fWin.xPos = mouseX - fWin.width/2;
-			fWin.yPos = mouseY - titleHeight/2 - titlePadding;
+			fWin.xPos = mouseX - fWin.width / 2;
+			fWin.yPos = mouseY - titleHeight / 2 - padding;
 			redraw();
 		}
 		*/
