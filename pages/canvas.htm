@@ -114,8 +114,10 @@
 				
 				// Window icon
 				var windowIcon = new Image();
+				var windowXPos = windows[i].xPos
+				var windowYPos = windows[i].yPos
 				windowIcon.onload = function() {
-					ctx.drawImage(windowIcon, windows[i].xPos + padding + 2, windows[i].yPos + padding + 1, titleHeight - 2, titleHeight - 2);
+					ctx.drawImage(windowIcon, windowXPos + padding + 2, windowYPos + padding + 1, titleHeight - 2, titleHeight - 2);
 				};
 				windowIcon.src = windows[i].icon;
 				
