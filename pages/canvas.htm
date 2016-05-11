@@ -113,13 +113,15 @@
 				ctx.fillRect(windows[i].xPos + padding, windows[i].yPos + padding, windows[i].width - padding * 2 + 1, titleHeight);
 				
 				// Window icon
-				var windowIcon = new Image();
-				var windowXPos = windows[i].xPos
-				var windowYPos = windows[i].yPos
-				windowIcon.onload = function() {
-					ctx.drawImage(windowIcon, windowXPos + padding + 2, windowYPos + padding + 1, titleHeight - 2, titleHeight - 2);
-				};
-				windowIcon.src = windows[i].icon;
+				if (windows[i].icon) {
+					var windowIcon = new Image();
+					var windowXPos = windows[i].xPos
+					var windowYPos = windows[i].yPos
+					windowIcon.onload = function() {
+						ctx.drawImage(windowIcon, windowXPos + padding + 2, windowYPos + padding + 1, titleHeight - 2, titleHeight - 2);
+					};
+					windowIcon.src = windows[i].icon;
+				}
 				
 				// Window Title and such
 				ctx.fillStyle = "#fff";
