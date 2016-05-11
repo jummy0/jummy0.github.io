@@ -40,7 +40,7 @@
 			content: "<p>swood this, swood that</p>"
 		};
 		
-		var windowBack = {
+		var windowCrouton = {
 			width: 600,
 			height: 400,
 			icon: "/res/crouton.gif",
@@ -48,6 +48,16 @@
 			xPos: 100,
 			yPos: 50,
 			content: "<p>&#x1f4af;</p>"
+		};
+		
+		var windowExploder = {
+			width: 400,
+			height: 300,
+			icon: "/res/cookie1.png",
+			title: "Internet Exploder",
+			xPos: 20,
+			yPos: 20,
+			content: "they got it wrong, sisterrrrrrrr"
 		};
 		
 		initialize();
@@ -76,7 +86,7 @@
 			ctx.fillStyle = "#088";
 			ctx.fillRect(0, 0, can.width, can.height);
 			
-			drawWindow(windowBack, windowSwood)
+			drawWindow(windowCrouton, windowExploder, windowSwood)
 		}
 		
 		function drawWindow() {
