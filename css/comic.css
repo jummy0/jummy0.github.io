@@ -3,7 +3,7 @@
 	font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
 }
 
-[class*="col-"] {
+[class*="col-"], not([class*="-offset-"]) {
 	background-color: red;
 }
 
