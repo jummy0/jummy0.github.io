@@ -9,3 +9,8 @@ h1, h2 {
 em {
 	color: inherit;
 }
+
+img.icon {
+	height: 80px;
+	max-width: 80%;
+}
