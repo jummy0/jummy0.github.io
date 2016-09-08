@@ -13,4 +13,5 @@ em {
 img.icon {
 	height: 80px;
 	max-width: 80%;
+	margin-top: 10px;
 }
