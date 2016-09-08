@@ -3,11 +3,12 @@
 	font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
 }
 
-[class*="col-"] {
+.highlight {
 	background-color: red;
+	border: 1px solid #ff0;
 }
 
-h1.gold {
+h1 {
 	color: #ff0;
 }
 
