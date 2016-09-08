@@ -2,7 +2,7 @@
 	color: white;
 }
 
-[class*="col-"], not([class*="-offset-"]) {
+[class*="col-"] {
 	background-color: #24303c;
 }
 
