@@ -2,7 +2,7 @@
 	color: white;
 }
 
-.row {
+[class*="col-"] {
 	background-color: #24303c;
 }
 
