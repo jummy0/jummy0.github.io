@@ -2,7 +2,7 @@
 	color: white;
 }
 
-[class*="col-"] {
+.highlight {
 	background-color: #24303c;
 	border: 1px solid #394d60;
 }
